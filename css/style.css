@@ -470,9 +470,9 @@ ul.dropdown-menu.drp-mnu li a i {
 }
 .wthree_banner_btm_pos1 h3 span{
 	display: block;
-    font-weight: 300;
+    font-weight: 200;
     line-height: 1.5em;
-    color: #FA1818;
+    color:;
 }
 /*-- //banner_bottom --*/
 /*-- top-brands --*/
@@ -486,11 +486,12 @@ ul.dropdown-menu.drp-mnu li a i {
 	color:#212121;
 	padding-bottom:.5em;
 	position:relative;
-	font-size: 2.5em;
+	font-size: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 .top-brands h3:after,.fresh-vegetables h3:after,.mail h3:after,.w3_login h3:after,.testimonials h3:after,.w3ls_w3l_banner_nav_right_grid h3:after,h3.title:after,.faq h3:after,.services h3:after,.about h3:after,.team h3:after,.events h3:after{
 	content: '';
-    background: #FA1818;
     height: 2px;
     width: 8%;
     position: absolute;
