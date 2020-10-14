@@ -22,7 +22,7 @@ author: jayaprada A.B.C
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
 <!-- //font-awesome icons -->
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
@@ -34,7 +34,7 @@ author: jayaprada A.B.C
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){
+		$(".scroll").click(function(event){		
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
@@ -42,41 +42,60 @@ author: jayaprada A.B.C
 </script>
 <!-- start-smoth-scrolling -->
 </head>
-
+	
 <body>
 <!-- header -->
-	<div style="background-color: purple;height: 30px;">
-		
+	<div class="agileits_header">
+		<div class="w3l_offers">
+			<a href="products.html">Today's special Offers !</a>
+		</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="submit" value=" ">
+			</form>
+		</div>
+		<div class="product_list_header">  
+			<form action="#" method="post" class="last">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart" />
+                    <input type="hidden" name="display" value="1" />
+                    <input type="submit" name="submit" value="View your cart" class="button" />
+                </fieldset>
+            </form>
+		</div>
 	</div>
 <!-- script-for sticky-nav -->
-	<script>
+	<script>	
 	$(document).ready(function() {
 		 var navoffeset=$(".agileits_header").offset().top;
 		 $(window).scroll(function(){
-			var scrollpos=$(window).scrollTop();
+			var scrollpos=$(window).scrollTop(); 
 			if(scrollpos >=navoffeset){
 				$(".agileits_header").addClass("fixed");
 			}else{
 				$(".agileits_header").removeClass("fixed");
 			}
 		 });
-
+		 
 	});
 	</script>
 <!-- //script-for sticky-nav -->
 	<div class="logo_products">
-		<div class="container ">
+		<div class="container">
 			<div class="col-md-4 logo_agile">
 				<h1>
 					<a href="index.html">
-						<img src="images/logo.jpg" alt=" " style="height: 130px;width: 1100px;position: center;">
+						<!--<span>G</span>rocery
+						<span>S</span>hoppy-->
+						<img src="Gates/Logo.png" alt=" " style="height: 140px;width: 140px;">
 					</a>
 				</h1>
 			</div>
-
-			<!--<div class="w3ls_logo_products_left1">
+			
+			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<li><a href="about.html" aria-hidden="true" style="position: right;">About Us</a><i>/</i></li>
+					<li><a href="events.html" aria-hidden="true" style="position: right;">About Us</a><i>/</i></li>
 					<li><a href="about.html" aria-hidden="true">Contact Us</a><i>/</i></li>
 					<li><a href="products.html" aria-hidden="true">Policies</a><i>/</i></li>
 					<li><a href="services.html" aria-hidden="true">FAQ</a></li>
@@ -89,7 +108,7 @@ author: jayaprada A.B.C
 					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
 					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto: LAOrnamental@Aol.com"> laornamental@aol.com</a></li>
 				</ul>
-			</div>-->
+			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
@@ -99,7 +118,7 @@ author: jayaprada A.B.C
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li></li>
+				<li style="color: white;">Linear/ Multi_code</li>
 			</ul>
 		</div>
 	</div>
@@ -116,45 +135,45 @@ author: jayaprada A.B.C
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
-			   </div>
+			   </div> 
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs" >
 					<ul class="nav navbar-nav nav_1">
 						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates<span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
-									<ul>
+									<ul>	
 										<li><a href="drive_way_gates.html">Drive Way Gates</a></li>
 										<li><a href="garden_gates.html">Garden Gates</a></li>
 									</ul>
-								</div>
-							</div>
+								</div>                  
+							</div>				
 						</li>
 						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Openers<span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Openers<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
-									<ul>
+									<ul>	
 										<li><a href="">Ramset</a></li>
 										<li><a href="">FAAC</a></li>
 										<li><a href="">Apollo</a></li>
 										<li><a href="">BFT</a></li>
 										<li><a href="">Power Master</a></li>
 									</ul>
-								</div>
-							</div>
+								</div>                  
+							</div>				
 						</li>
 						<li><a href="">Fencing</a></li>
 							<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Railling<span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Railling<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>	
-										<li><a href="modern_balcony_railings.html">Modern Balcony Railing</a></li>
+										<li><a href="railling.html">Modern Balcony Railling</a></li>
 									</ul>
-								</div>
-							</div>
+								</div>                  
+							</div>				
 						</li>
 						<li><a href="">Telephone Entry</a></li>
 						<li class="dropdown mega-dropdown active">
@@ -170,309 +189,225 @@ author: jayaprada A.B.C
 								</div>                  
 							</div>				
 						</li>
-						
 						<li><a href="">Control Board</a></li>
 						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
-									<ul>
+									<ul>	
 										<li><a href="linear.html">Linear/Multi_code</a></li>
 										<li><a href="dearking.html">Dearking</a></li>
 										<li><a href="lift_master.html">Lift Master</a></li>
 										<li><a href="key_stone.html">Key Stone</a></li>
 										<li><a href="long_range.html">Long Range</a></li>
 									</ul>
-								</div>
-							</div>
+								</div>                  
+							</div>				
 						</li>
-
+						
 						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Remote Controls<span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Remote Controls<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
-									<ul>
+									<ul>	
 										<li><a href="">Multi_code</a></li>
 										<li><a href="">Transmittor Solution</a></li>
 										<li><a href="">Linear</a></li>
 										<li><a href="">Dearking</a></li>
 										<li><a href="">BFT.SEA.FAAC</a></li>
 										<li><a href="">long range</a></li>
-							
-								</div>
-							</div>
-						</li>
-								
-						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gate Accessories<span class="caret"></span></a>				
+							<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>	
-							<li><a href="cantileverwheel.html">Cantilever Wheels</a></li>
-							<li><a href="vtrack.html">VTrack-Guide-Vwheels</a></li>
-							<li><a href="hingers.html">Hingers</a></li>
-							<li><a href="latch.html">Locks-Latches</a></li>
+										<li><a href="linear.html">Linear/Multi_code</a></li>
+										<li><a href="dearking.html">Dearking</a></li>
+										<li><a href="lift_master.html">Lift Master</a></li>
+										<li><a href="key_stone.html">Key Stone</a></li>
+										<li><a href="long_range.html">Long Range</a></li>
+									</ul>
+								</div>                  
+							</div>				
+						</li>
+									</ul>
+								</div>                  
+							</div>				
+						</li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates Accesories<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+				
+
+										<li><a href="cantileverwheel.html">Cantilever Wheels</a></li>
+										<li><a href="vtrack.html">VTrack-Guide-Vwheels</a></li>
+										<li><a href="hingers.html">Hingers</a></li>
+										<li><a href="latch.html">Locks-Latches</a></li>
+						
+								</ul>
+							</div>
 						  </div>
-					      </div>
-			        	</li>
+						
+						</li>	
+						
 					</ul>
 				 </div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-			<section class="slider">
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<div class="w3l_banner_nav_right_banner">
-								<h3>Make your <span>Gates</span> with Creative Design.</h3>
-								<div class="more">
-									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-								</div>
+			<div class="w3ls_w3l_banner_nav_right_grid">
+				<h3>Mega Code</h3>
+				<div class="w3ls_w3l_banner_nav_right_grid1">
+				
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+							</div>  
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="Linear images/linear1.png" alt=" " class="img-responsive" /></a>
+											<p>Long Range Reciever, Long Range Gate Opener Receiver</p>
+											<h4>$350.00 </h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="Brown arch specific" />
+													<input type="hidden" name="amount" value="3.00" />
+													<input type="hidden" name="discount_amount" value="350.00" />
+													<input type="hidden" name="currency_code" value="USD" />
+					                                <input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
 							</div>
-						</li>
-						<li>
-							<div class="w3l_banner_nav_right_banner1">
-								<h3>Make your <span>Gates</span> with Creative Design.</h3>
-								<div class="more">
-									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-								</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
 							</div>
-						</li>
-						<li>
-							<div class="w3l_banner_nav_right_banner2">
-								<h3>upto <i>20%</i> off.</h3>
-								<div class="more">
-									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
-								</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="Linear images/linear2.png" alt=" " class="img-responsive" /></a>
+											<p>	Long Range LR-Antenna, Extended Range Exterior Antenna</p>
+											<h4>$300.00 </h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="lahsun arch" />
+													<input type="hidden" name="amount" value="300.00" />
+													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="currency_code" value="USD" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
 							</div>
-						</li>
-					</ul>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="Linear images/linear3.png" alt=" " class="img-responsive" /></a>
+											<p>	Long Range Remote Control LR-500-1C, Extended Range Transmitter</p>
+											<h4>$350.00 </h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="lahsun sev" />
+													<input type="hidden" name="amount" value="3.00" />
+													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="currency_code" value="USD" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="Linear images/linear4.png" alt=" " class="img-responsive" /></a>
+											<p>Long Range Remote Control, 2 Button Keychain LR-500-2C Transmitters</p>
+											<h4>$350.00 </h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="lahsun sev" />
+													<input type="hidden" name="amount" value="3.00" />
+													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="currency_code" value="USD" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
 				</div>
-			</section>
-			<!-- flexSlider -->
-				<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-				<script defer src="js/jquery.flexslider.js"></script>
-				<script type="text/javascript">
-				$(window).load(function(){
-				  $('.flexslider').flexslider({
-					animation: "slide",
-					start: function(slider){
-					  $('body').removeClass('loading');
-					}
-				  });
-				});
-			  </script>
-			<!-- //flexSlider -->
+			</div>
 		</div>
 		<div class="clearfix"></div>
 	</div>
-<!-- banner -->
-	<div class="banner_bottom">
-			<div class="wthree_banner_bottom_left_grid_sub">
-			</div>
-			<div class="wthree_banner_bottom_left_grid_sub1">
-				<div class="col-md-4 wthree_banner_bottom_left">
-					<div class="wthree_banner_bottom_left_grid">
-						<img src="Gates/6.png" alt=" " class="img-responsive" />
-						<!--<div class="wthree_banner_bottom_left_grid_pos">
-							<h4>Discount Offer <span>25%</span></h4>
-						</div>-->
-					</div>
-				</div>
-				<div class="col-md-4 wthree_banner_bottom_left">
-					<div class="wthree_banner_bottom_left_grid">
-						<img src="Gates/7.png" alt=" " class="img-responsive" />
-						<!--<div class="wthree_banner_btm_pos">
-							<h3>introducing <span>best store</span> for <i>Gate N Fences</i></h3>
-						</div>-->
-					</div>
-				</div>
-				<div class="col-md-4 wthree_banner_bottom_left">
-					<div class="wthree_banner_bottom_left_grid">
-						<img src="Gates/2.png" alt=" " class="img-responsive" />
-						<!--<div class="wthree_banner_btm_pos1">
-							<h3>Save <span>Upto</span> $10</h3>
-						</div>-->
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="clearfix"> </div>
-	</div>
-<!-- top-brands -->
-<div class="top-brands">
-	<div class="container">
-		<h3>Hot Offers</h3>
-		<div class="agile_top_brands_grids">
-			<div class="col-md-3 top_brand_left">
-				<div class="hover14 column">
-					<div class="agile_top_brand_left_grid">
-						<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
-						<div class="agile_top_brand_left_grid1">
-							<figure>
-								<div class="snipcart-item block" >
-									<div class="snipcart-thumb">
 
-										<a href="single.html"><img title=" " alt=" " src="Fences/1.jpg"  width="140" height="140" /></a>		
-										<p>iron spike fense</p>
-										<h4>$79.99 per yard <span>$100.0</span></h4>
-
-									</div>
-									<div class="snipcart-details top_brand_home_details">
-										<form action="checkout.html" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" />
-												<input type="hidden" name="add" value="1" />
-												<input type="hidden" name="business" value=" " />
-												<input type="hidden" name="item_name" value="iron spike fense" />
-												<input type="hidden" name="amount" value="79.99" />
-												<input type="hidden" name="discount_amount" value="20.01" />
-												<input type="hidden" name="currency_code" value="USD" />
-												<input type="hidden" name="return" value=" " />
-												<input type="hidden" name="cancel_return" value=" " />
-												<input type="submit" name="submit" value="Add to cart" class="button" />
-											</fieldset>
-												
-										</form>
-								
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 top_brand_left">
-				<div class="hover14 column">
-					<div class="agile_top_brand_left_grid">
-						<div class="agile_top_brand_left_grid1">
-							<figure>
-								<div class="snipcart-item block" >
-									<div class="snipcart-thumb">
-
-										<a href="single.html"><img title=" " alt=" " src="Gates/3.png"  width="140" height="140" /></a>		
-										<p>aluminum doorway gates</p>
-										<h4> $1199 <span>$1200</span></h4>
-
-									</div>
-									<div class="snipcart-details top_brand_home_details">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" />
-												<input type="hidden" name="add" value="1" />
-												<input type="hidden" name="business" value=" " />
-												<input type="hidden" name="item_name" value="aluminum doorway gate" />
-												<input type="hidden" name="amount" value="1199.00" />
-												<input type="hidden" name="discount_amount" value="1.00" />
-												<input type="hidden" name="currency_code" value="USD" />
-												<input type="hidden" name="return" value=" " />
-												<input type="hidden" name="cancel_return" value=" " />
-												<input type="submit" name="submit" value="Add to cart" class="button" />
-											</fieldset>
-										</form>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 top_brand_left">
-				<div class="hover14 column">
-					<div class="agile_top_brand_left_grid">
-						<div class="agile_top_brand_left_grid_pos">
-							<img src="images/offer.png" alt=" " class="img-responsive" />
-						</div>
-						<div class="agile_top_brand_left_grid1">
-							<figure>
-								<div class="snipcart-item block">
-									<div class="snipcart-thumb">
-
-										<a href="single.html"><img src="Gates/2.png" alt=" "  width="140" height="140"  /></a>
-										<p>aluminum driveway gates</p>
-										<h4>$800 <span>$1000</span></h4>
-
-									</div>
-									<div class="snipcart-details top_brand_home_details">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" />
-												<input type="hidden" name="add" value="1" />
-												<input type="hidden" name="business" value=" " />
-												<input type="hidden" name="item_name" value="aluminum driveway gates" />
-												<input type="hidden" name="amount" value="800" />
-												<input type="hidden" name="discount_amount" value="200.00" />
-												<input type="hidden" name="currency_code" value="USD" />
-												<input type="hidden" name="return" value=" " />
-												<input type="hidden" name="cancel_return" value=" " />
-												<input type="submit" name="submit" value="Add to cart" class="button" />
-											</fieldset>
-										</form>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 top_brand_left">
-				<div class="hover14 column">
-					<div class="agile_top_brand_left_grid">
-						<div class="agile_top_brand_left_grid_pos">
-							<img src="images/offer.png" alt=" " class="img-responsive" />
-						</div>
-						<div class="agile_top_brand_left_grid1">
-							<figure>
-								<div class="snipcart-item block">
-									<div class="snipcart-thumb">
-										<a href="single.html"><img src="Gates/4.png" alt=" "  width="140" height="140" /></a>
-										<p>iron driveway gate (5 M)</p>
-										<h4>$900 <span>$1100</span></h4>
-									</div>
-									<div class="snipcart-details top_brand_home_details">
-										<form action="#" method="post">
-											<fieldset>
-												<input type="hidden" name="cmd" value="_cart" />
-												<input type="hidden" name="add" value="1" />
-												<input type="hidden" name="business" value=" " />
-												<input type="hidden" name="item_name" value="iron driveway gate" />
-												<input type="hidden" name="amount" value="900.00" />
-												<input type="hidden" name="discount_amount" value="200.00" />
-												<input type="hidden" name="currency_code" value="USD" />
-												<input type="hidden" name="return" value=" " />
-												<input type="hidden" name="cancel_return" value=" " />
-												<input type="submit" name="submit" value="Add to cart" class="button" />
-											</fieldset>
-										</form>
-									</div>
-								</div>
-							</figure>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<!-- //top-brands -->
-<!-- newsletter -->
-	<div class="newsletter">
-		<div class="container">
-			<div class="w3agile_newsletter_left">
-				<h3>sign up for our newsletter</h3>
-			</div>
-			<div class="w3agile_newsletter_right">
-				<form action="#" method="post">
-					<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-					<input type="submit" value="subscribe now">
-				</form>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-<!-- //newsletter -->
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -538,7 +473,7 @@ author: jayaprada A.B.C
 				<div class="clearfix"> </div>
 			</div>
 			<div class="wthree_footer_copy">
-				<!-- <p>© 2020 All rights reserved </p> -->
+				<p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>
 		</div>
 	</div>
@@ -547,14 +482,14 @@ author: jayaprada A.B.C
 <script src="js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){
-    $(".dropdown").hover(
+    $(".dropdown").hover(            
         function() {
             $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-            $(this).toggleClass('open');
+            $(this).toggleClass('open');        
         },
         function() {
-            $('.dropdown-menu', this).stop( true, true ).slideUp("slow");
-            $(this).toggleClass('open');
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
         }
     );
 });
@@ -567,12 +502,12 @@ $(document).ready(function(){
 				containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
-				easingType: 'linear'
+				easingType: 'linear' 
 				};
 			*/
-
+								
 			$().UItoTop({ easingType: 'easeOutQuart' });
-
+								
 			});
 	</script>
 <!-- //here ends scrolling icon -->
