@@ -12,6 +12,13 @@ author: Diyunuge K.D.C.D.R
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Gates Fenses L. A. Ornamental & Rack Corporation" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome icons -->
@@ -38,8 +45,28 @@ author: Diyunuge K.D.C.D.R
 	
 <body>
 <!-- header -->
+	<div class="agileits_header">
+		<div class="w3l_offers">
+			<a href="products.html">Today's special Offers !</a>
+		</div>
+		<div class="w3l_search">
+			<form action="#" method="post">
+				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
+				<input type="submit" value=" ">
+			</form>
+		</div>
+		<div class="product_list_header">  
+			<form action="#" method="post" class="last">
+                <fieldset>
+                    <input type="hidden" name="cmd" value="_cart" />
+                    <input type="hidden" name="display" value="1" />
+                    <input type="submit" name="submit" value="View your cart" class="button" />
+                </fieldset>
+            </form>
+		</div>
+	</div>
 <!-- script-for sticky-nav -->
-	<script>
+	<script>	
 	$(document).ready(function() {
 		 var navoffeset=$(".agileits_header").offset().top;
 		 $(window).scroll(function(){
@@ -59,6 +86,8 @@ author: Diyunuge K.D.C.D.R
 			<div class="col-md-4 logo_agile">
 				<h1>
 					<a href="index.html">
+						<!--<span>G</span>rocery
+						<span>S</span>hoppy-->
 						<img src="Gates/Logo.png" alt=" " style="height: 140px;width: 140px;">
 					</a>
 				</h1>
@@ -66,7 +95,7 @@ author: Diyunuge K.D.C.D.R
 			
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<li><a href="events.html" aria-hidden="true" style="position: right;">About Us</a><i>/</i></li>
+					<li><a href="about.html" aria-hidden="true" style="position: right;">About Us</a><i>/</i></li>
 					<li><a href="about.html" aria-hidden="true">Contact Us</a><i>/</i></li>
 					<li><a href="products.html" aria-hidden="true">Policies</a><i>/</i></li>
 					<li><a href="services.html" aria-hidden="true">FAQ</a></li>
@@ -81,6 +110,16 @@ author: Diyunuge K.D.C.D.R
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- products-breadcrumb -->
+	<div class="products-breadcrumb">
+		<div class="container">
+			<ul>
+				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+				<li>Vtrack - Guids - Vwheels</li>
+			</ul>
 		</div>
 	</div>
 <!-- //header -->
