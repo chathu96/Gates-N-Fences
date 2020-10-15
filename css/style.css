@@ -1200,7 +1200,7 @@ button.submit.check_out{
 	filter: alpha(opacity=0);
 }
 /*-- //to-top --*/
-/*-- products-breadcrumb --*/
+
 .products-breadcrumb{
 	padding:1em 0;
 	background:purple;
@@ -1218,13 +1218,13 @@ button.submit.check_out{
 	text-decoration:none;
 }
 .products-breadcrumb ul li a:hover{
-	color:#FA1818;
+	color:white;
 }
 .products-breadcrumb ul li i {
     padding-right: 1em;
-	color:#FA1818;
+	color:white;
 }
-/*-- //products-breadcrumb --*/
+
 /*-- products --*/
 .w3l_banner_nav_right_banner3,.w3l_banner_nav_right_banner4,.w3l_banner_nav_right_banner5,.w3l_banner_nav_right_banner6,.w3l_banner_nav_right_banner7,.w3l_banner_nav_right_banner8,.w3l_banner_nav_right_banner9,.w3l_banner_nav_right_banner10{
 	min-height:300px;
