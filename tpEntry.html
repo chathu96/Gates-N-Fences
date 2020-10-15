@@ -1,5 +1,5 @@
 <!--
-author: Diyunuge K.D.C.D.R
+author: jayaprada A.B.C
 -->
 <!DOCTYPE html>
 <html>
@@ -22,10 +22,11 @@ author: Diyunuge K.D.C.D.R
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //font-awesome icons -->
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootbox.js"></script>
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -34,7 +35,7 @@ author: Diyunuge K.D.C.D.R
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		$(".scroll").click(function(event){
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
@@ -42,7 +43,7 @@ author: Diyunuge K.D.C.D.R
 </script>
 <!-- start-smoth-scrolling -->
 </head>
-	
+
 <body>
 <!-- header -->
 	<div class="agileits_header">
@@ -55,7 +56,7 @@ author: Diyunuge K.D.C.D.R
 				<input type="submit" value=" ">
 			</form>
 		</div>
-		<div class="product_list_header">  
+		<div class="product_list_header">
 			<form action="#" method="post" class="last">
                 <fieldset>
                     <input type="hidden" name="cmd" value="_cart" />
@@ -66,18 +67,18 @@ author: Diyunuge K.D.C.D.R
 		</div>
 	</div>
 <!-- script-for sticky-nav -->
-	<script>	
+	<script>
 	$(document).ready(function() {
 		 var navoffeset=$(".agileits_header").offset().top;
 		 $(window).scroll(function(){
-			var scrollpos=$(window).scrollTop(); 
+			var scrollpos=$(window).scrollTop();
 			if(scrollpos >=navoffeset){
 				$(".agileits_header").addClass("fixed");
 			}else{
 				$(".agileits_header").removeClass("fixed");
 			}
 		 });
-		 
+
 	});
 	</script>
 <!-- //script-for sticky-nav -->
@@ -92,10 +93,10 @@ author: Diyunuge K.D.C.D.R
 					</a>
 				</h1>
 			</div>
-			
+
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<li><a href="about.html" aria-hidden="true" style="position: right;">About Us</a><i>/</i></li>
+					<li><a href="events.html" aria-hidden="true" style="position: right;">About Us</a><i>/</i></li>
 					<li><a href="about.html" aria-hidden="true">Contact Us</a><i>/</i></li>
 					<li><a href="products.html" aria-hidden="true">Policies</a><i>/</i></li>
 					<li><a href="services.html" aria-hidden="true">FAQ</a></li>
@@ -118,11 +119,11 @@ author: Diyunuge K.D.C.D.R
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li>Safety Photo Cells</li>
+				<li>Openers</li>
 			</ul>
 		</div>
 	</div>
-<!-- //header -->
+<!-- //products-breadcrumb -->
 <!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
@@ -135,45 +136,45 @@ author: Diyunuge K.D.C.D.R
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
-			   </div> 
+			   </div>
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs" >
 					<ul class="nav navbar-nav nav_1">
 						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates<span class="caret"></span></a>				
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
-									<ul>	
+									<ul>
 										<li><a href="drive_way_gates.html">Drive Way Gates</a></li>
 										<li><a href="garden_gates.html">Garden Gates</a></li>
 									</ul>
-								</div>                  
-							</div>				
+								</div>
+							</div>
 						</li>
 						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Openers<span class="caret"></span></a>				
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Openers<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
-									<ul>	
+									<ul>
 										<li><a href="Openers.html#ramset">Ramset</a></li>
 										<li><a href="Openers.html#faac">FAAC</a></li>
 										<li><a href="Openers.html#apollo">Apollo</a></li>
 										<li><a href="Openers.html#bft">BFT</a></li>
 										<li><a href="Openers.html#pm">Power Master</a></li>
 									</ul>
-								</div>                  
-							</div>				
+								</div>
+							</div>
 						</li>
 						<li><a href="">Fencing</a></li>
 							<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Railling<span class="caret"></span></a>				
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Railling<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
-									<ul>	
+									<ul>
 										<li><a href="railling.html">Modern Balcony Railling</a></li>
 									</ul>
-								</div>                  
-							</div>				
+								</div>
+							</div>
 						</li>
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Telephone Entry<span class="caret"></span></a>
@@ -186,49 +187,40 @@ author: Diyunuge K.D.C.D.R
 								</div>
 							</div>
 						</li>
-					
 						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Safety Equipments<span class="caret"></span></a>				
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Safety Equipments<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
-									<ul>	
+									<ul>
 										<li><a href="safety_loops.html">Safety Loops</a></li>
 										<li><a href="loop_detector.html">Loop Detector</a></li>
 										<li><a href="safety_photo.html">Safety Photo Cell</a></li>
-										
+
 									</ul>
-								</div>                  
-							</div>				
+								</div>
+							</div>
 						</li>
-						
-						
-						
-						
-						
-						
-						
-						
 						<li><a href="">Control Board</a></li>
 						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>				
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
-									<ul>	
+									<ul>
 										<li><a href="linear.html">Linear/Multi_code</a></li>
 										<li><a href="dearking.html">Dearking</a></li>
 										<li><a href="lift_master.html">Lift Master</a></li>
 										<li><a href="key_stone.html">Key Stone</a></li>
 										<li><a href="long_range.html">Long Range</a></li>
 									</ul>
-								</div>                  
-							</div>				
+								</div>
+							</div>
 						</li>
-						
+
 						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Remote Controls<span class="caret"></span></a>				
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Remote Controls<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
-									<ul>	
+									<ul>
 										<li><a href="">Multi_code</a></li>
 										<li><a href="">Transmittor Solution</a></li>
 										<li><a href="">Linear</a></li>
@@ -236,82 +228,73 @@ author: Diyunuge K.D.C.D.R
 										<li><a href="">BFT.SEA.FAAC</a></li>
 										<li><a href="">long range</a></li>
 							<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>				
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
-									<ul>	
+									<ul>
 										<li><a href="linear.html">Linear/Multi_code</a></li>
 										<li><a href="dearking.html">Dearking</a></li>
 										<li><a href="lift_master.html">Lift Master</a></li>
 										<li><a href="key_stone.html">Key Stone</a></li>
 										<li><a href="long_range.html">Long Range</a></li>
 									</ul>
-								</div>                  
-							</div>				
+								</div>
+							</div>
 						</li>
 									</ul>
-								</div>                  
-							</div>				
+								</div>
+							</div>
 						</li>
 						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates Accesories<span class="caret"></span></a>				
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates Accesories<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
-									<ul>	
-				
+									<ul>
+
 
 										<li><a href="cantileverwheel.html">Cantilever Wheels</a></li>
 										<li><a href="vtrack.html">VTrack-Guide-Vwheels</a></li>
 										<li><a href="hingers.html">Hingers</a></li>
 										<li><a href="latch.html">Locks-Latches</a></li>
-									</ul>
-								</div>
+
+								</ul>
 							</div>
-							
-							</li>
+						  </div>
+
+						</li>
+
 					</ul>
 				 </div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
-	<!--Safety Photo Cell Page -->
-<script>
-function showText(text){
-    document.getElementById("text").innerHTML=text;
-}
-function hide(){
-    document.getElementById("text").innerHTML="";
-}
-</script>
-	
 		<div class="w3l_banner_nav_right">
 			<div class="w3ls_w3l_banner_nav_right_grid">
-				<h3><b>Safety Photo Cell</b></h3>
-	
-			<div class="w3ls_w3l_banner_nav_right_grid1">
+				<h3 id="lift_master">Chamberlain LiftMaster</h3>
+				<div class="w3ls_w3l_banner_nav_right_grid1">
 
 					<div class="col-md-3 w3ls_w3l_banner_left">
 						<div class="hover14 column">
 						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
 							<div class="agile_top_brand_left_grid_pos">
-								
-							</div>  
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
 							<div class="agile_top_brand_left_grid1">
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img2.jpg" alt=" " class="img-responsive" /></a>
-											<p>EMX Mini Infra-Red Eye BP 10 12V</p>
-											<h4><center>$150.00</center></h4>
+											<a id="linkEL1SS" href="#"><img src="TPEntry\LiftMaster\EL1SS_hero_1.png" alt=" " width="200" height="200"/></a>
+											<p>EL1SS Telephone Intercom and Access Control System</p>
+											<h4>$650.00 </h4>
 										</div>
 										<div class="snipcart-details">
 											<form action="#" method="post">
 												<fieldset>
-													<input type="hidden" name="cmd" value="" />
+													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="Drive way Gate 1" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="business" value="LiftMaster" />
+													<input type="hidden" name="item_name" value="Telephone Intercom and Access Control System - EL1SS " />
+													<input type="hidden" name="amount" value="650.00" />
+													<input type="hidden" name="discount_amount" value="0.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 					                                <input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
@@ -325,482 +308,212 @@ function hide(){
 						</div>
 						</div>
 					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-							
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img2.jpg" alt=" " class="img-responsive" /></a>
-											<p>EMX Mini Infra-Red Eye BP 10 24V</p>
-											<h4><center>$150.00</center></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img4.png" alt=" " class="img-responsive" /></a>
-											<p>EMX IRB-EXP Infrared Explosive Env photoswitch</p>
-											<h4><center>$550.00</center> </h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img3.jpg" alt=" " class="img-responsive" > </a>
-											
-										<p>EMX Photo Electric Sensors - P41 full kit </p>
-										
-											<h4><center>$149.00</center></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-						
 
-						
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a id="linkEL2000SS" href="#"><img src="TPEntry\LiftMaster\EL2000_hero_1.png" alt=" " width="200" height="200"/></a>
+											<p>EL2000SS Telephone Entry for Commercial Applications</p>
+											<h4>$1690.00 </h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value="LiftMaster" />
+													<input type="hidden" name="item_name" value="Telephone Entry for Commercial Applications and Gated Communities - EL2000SS " />
+													<input type="hidden" name="amount" value="1690.00" />
+													<input type="hidden" name="discount_amount" value="0.00" />
+													<input type="hidden" name="currency_code" value="USD" />
+																					<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
 					</div>
+
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a id="linkCAPXLV" href="#"><img src="TPEntry\LiftMaster\CAPXLV_hero_1.jpg" alt=" " width="200" height="200"/></a>
+											<p>CAPXLV Connected Access Portal, High Capacity with Video</p>
+											<h4>$2500.00 </h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value="LiftMaster" />
+													<input type="hidden" name="item_name" value="Connected Access Portal, High Capacity with Video - CAPXLV " />
+													<input type="hidden" name="amount" value="2500.00" />
+													<input type="hidden" name="discount_amount" value="0.00" />
+													<input type="hidden" name="currency_code" value="USD" />
+																					<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+									<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="single.html"><img src="TPEntry\Elite\el25_360x.webp" alt=" " width="200" height="200"/></a>
+											<p>Elite EL25 Telephone Entry and Access Control System</p>
+											<h4>$1290.00</h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value="Elite"/>
+													<input type="hidden" name="item_name" value="Elite EL25 Telephone Entry System - SKU: el25-gre " />
+													<input type="hidden" name="amount" value="1290.00" />
+													<input type="hidden" name="discount_amount" value="0.00" />
+													<input type="hidden" name="currency_code" value="USD" />
+																					<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<!--clear previous settings-->
 					<div class="clearfix"> </div>
 				</div>
-
-				
 			</div>
-		
-			
 		</div>
-		
-		
-		<div class="w3l_banner_nav_right">
-			<div class="w3ls_w3l_banner_nav_right_grid">
-
-				
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								
-							</div>  
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img4.jpg" alt=" " class="img-responsive" /></a>
-										
-											<p>EMX Retro-Reflective Photoeye NIRPlus -Full Kit</p>
-											
-											<h4><center>$119.00</center></h4>
-											
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="Drive way Gate 1" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-					                                <input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-							
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img5.jpg" alt=" " class="img-responsive" /></a>
-											<p>EMX Steel Protective Hood for NIR</p>
-											<h4><center>$24.00</center></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img6.jpg" alt=" " class="img-responsive" /></a>
-											<p>EMX Optional 3” round reflector </p>
-											<h4><center>$19.00</center> </h4>
-											
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img7.jpg" alt=" " class="img-responsive" /></a>
-											<p>EMX Gray Protective Hood for Reflector </p>
-											<h4><center>$28.00</center></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-
-				
-			</div>
-		
-		
-		
-		<div class="w3l_banner_nav_right">
-			<div class="w3ls_w3l_banner_nav_right_grid">
-
-				
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								
-							</div>  
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img1.jpg" alt=" " class="img-responsive" /></a>
-										
-											<p>EMX IRB-325 Infrared Photoeye Safety Sensors</p>
-											
-											<h4><center>$243.00</center></h4>
-											
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="Drive way Gate 1" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-					                                <input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-							
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img9.jpg" alt=" " class="img-responsive" /></a>
-											<p>
-EMX P63 Infrared Photoeye</p></br>
-											<h4><center>$69.00</center></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img8.jpg" alt=" " class="img-responsive" /></a>
-											<p>EMX Infrared Modulated Photocell IRB-4X </p>
-											<h4><center>$243.00</center> </h4>
-											
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="col-md-3 w3ls_w3l_banner_left">
-						<div class="hover14 column">
-						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img111.jpg" alt=" " class="img-responsive" /></a>
-											<p>Omron Safety Photo Cell with Unit
-Reflector
-Sensors </p>
-											<h4><center>$189.00</center></h4>
-										</div>
-										<div class="snipcart-details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-
-				
-			</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-			
-		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		<div class="clearfix"></div>
 	</div>
+
+<div class="w3l_banner_nav_right">
+	<div class="w3ls_w3l_banner_nav_right_grid">
+		<h3 id="aas">American Access Systms</h3>
+		<div class="w3ls_w3l_banner_nav_right_grid1">
+
+			<div class="col-md-3 w3ls_w3l_banner_left">
+				<div class="hover14 column">
+				<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+					<div class="agile_top_brand_left_grid_pos">
+						<img src="images/offer.png" alt=" " class="img-responsive" />
+					</div>
+					<div class="agile_top_brand_left_grid1">
+						<figure>
+							<div class="snipcart-item block">
+								<div class="snipcart-thumb">
+									<a href="single.html"><img src="TPEntry\AAS\ascent-x1.png" alt=" " width="200" height="200"/></a>
+									<p>SBI Ascent X1 Cellular Telephone Entry System with Keypad</p>
+									<h4>$1450.00</h4>
+								</div>
+								<div class="snipcart-details">
+									<form action="#" method="post">
+										<fieldset>
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" />
+											<input type="hidden" name="business" value="Security Brands Inc" />
+											<input type="hidden" name="item_name" value="SBI Ascent X1 Cellular Telephone Entry System with Keypad - Model 16-X1" />
+											<input type="hidden" name="amount" value="1450.00" />
+											<input type="hidden" name="discount_amount" value="1.00" />
+											<input type="hidden" name="currency_code" value="USD" />
+																			<input type="hidden" name="return" value=" " />
+											<input type="hidden" name="cancel_return" value=" " />
+											<input type="submit" name="submit" value="Add to cart" class="button" />
+										</fieldset>
+									</form>
+								</div>
+							</div>
+						</figure>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-3 w3ls_w3l_banner_left">
+				<div class="hover14 column">
+				<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+					<div class="agile_top_brand_left_grid_pos">
+						<img src="images/offer.png" alt=" " class="img-responsive" />
+					</div>
+					<div class="agile_top_brand_left_grid1">
+						<figure>
+							<div class="snipcart-item block">
+								<div class="snipcart-thumb">
+									<a href="single.html"><img src="TPEntry\AAS\ascent-x2-med-res.png" alt=" " width="200" height="200" /></a>
+									<p>SBI Ascent X2 – Cellular Multi-Tenant Entry System</p>
+									<h4>$3300.00 </h4>
+								</div>
+								<div class="snipcart-details">
+									<form action="#" method="post">
+										<fieldset>
+											<input type="hidden" name="cmd" value="_cart" />
+											<input type="hidden" name="add" value="1" />
+											<input type="hidden" name="business" value="Security Brands Inc" />
+											<input type="hidden" name="item_name" value="SBI Ascent X2 – Cellular Multi-Tenant Entry System with Directory Insert - Model 16-X2" />
+											<input type="hidden" name="amount" value="3300.00" />
+											<input type="hidden" name="discount_amount" value="0.00" />
+											<input type="hidden" name="currency_code" value="USD" />
+											<input type="hidden" name="return" value=" " />
+											<input type="hidden" name="cancel_return" value=" " />
+											<input type="submit" name="submit" value="Add to cart" class="button" />
+										</fieldset>
+									</form>
+								</div>
+							</div>
+						</figure>
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>
+</div>
 <!-- //banner -->
-<!-- //banner -->
+
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
@@ -875,14 +588,14 @@ Sensors </p>
 <script src="js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){
-    $(".dropdown").hover(            
+    $(".dropdown").hover(
         function() {
             $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-            $(this).toggleClass('open');        
+            $(this).toggleClass('open');
         },
         function() {
             $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-            $(this).toggleClass('open');       
+            $(this).toggleClass('open');
         }
     );
 });
@@ -895,12 +608,12 @@ $(document).ready(function(){
 				containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
-				easingType: 'linear' 
+				easingType: 'linear'
 				};
 			*/
-								
+
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
+
 			});
 	</script>
 <!-- //here ends scrolling icon -->
@@ -926,5 +639,35 @@ $(document).ready(function(){
 		});
 
 	</script>
+	<!-- bootbox items details -->
+<script>
+
+		// $("#linkRAM100").on("click", function() {
+		// 			bootbox.alert({
+		// 	title: "This is title",
+		// 	 message: "This alert can be dismissed by clicking on the background!",
+		// 	 backdrop: true
+		//  });
+		// 	});
+
+		$("#linkEL1SS").on("click", function() {
+			var dialog = bootbox.dialog({
+    title: 'Product details',
+    message: '<p><i class="fa fa-spin fa-spinner"></i> Loading...</p>',
+
+});
+
+dialog.init(function(){
+    setTimeout(function(){
+        dialog.find('.bootbox-body').html('<h3>EL1SS Telephone Intercom and Access Control System</h3><div class="col-md-4 agileinfo_single_left"><img id="linkEL1SS" src="TPEntry/LiftMaster/EL1SS_hero_1.png" alt=" " class="img-responsive"></div><div class="col-md-8 agileinfo_single_right"><div class="rating1"><span class="starRating"><input id="rating5" type="radio" name="rating" value="5"><label for="rating5">5</label><input id="rating4" type="radio" name="rating" value="4"><label for="rating4">4</label><input id="rating3" type="radio" name="rating" value="3" checked=""><label for="rating3">3</label><input id="rating2" type="radio" name="rating" value="2"><label for="rating2">2</label><input id="rating1" type="radio" name="rating" value="1"><label for="rating1">1</label></span></div><div class="w3agile_description"><h4>Description :</h4><p><ul><li>Voice Communications and Access Control for a Single Family Home.</li><li>Value Priced, But Feature Rich: Call Forwarding, Call Waiting, Party Mode, Do Not Disturb, and Auto-Call Features.</li><li>Easy to Program, No Software Required.</li><li>No Phone Bill When You Use Intercom Mode.</li></ul></p></div><div class="snipcart-item block"><div class="snipcart-thumb agileinfo_single_right_snipcart"><h4>$650 <span></span></h4></div></div></div><div class="clearfix"> </div>');
+    }, 1000);
+});
+			});
+
+
+	</script>
+
+
+	<!-- //here ends bootbox items detils -->
 </body>
 </html>
