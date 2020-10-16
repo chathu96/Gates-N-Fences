@@ -84,7 +84,7 @@ author: Diyunuge K.D.C.D.R
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li style="color: white;">Billing / Shipping Information</li>
+				<li style="color: white;">Payments</li>
 			</ul>
 		</div>
 	</div>
@@ -231,265 +231,109 @@ author: Diyunuge K.D.C.D.R
 				 </div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
+		
+		<!--Billing Page -->	
+		<div class="w3l_banner_nav_right">
+			<div class="w3ls_w3l_banner_nav_right_grid">
+				<h3><b>Payments </b></h3
+	
 		</div>
 		
-			<style> 
-.form-group.required .control-label:after {
-  content:"*";
-  color:red;
-}
-</style>
 
+  
+  <form class="form-horizontal" action="index.html"  >
+  
+	<div class="form-group required control-label">
+		<label class="control-label col-sm-2" for="state">Select Payment Type:</label>
+		 <div class="col-sm-9" >
+	  <div class="dropdown">
+		<select class="form-control">
+		<option selected value="country">Select Payment Type </option>
+		<option  value="AI">Master Card</option>
+	  <option  value="AG">Discover</option>
+	  <option  value="AW">Visa</option>
+	  <option  value="AU">American Express</option>
+	  
+	  
+	   </select>
+	  </div>
+	  </div>
+	  </div>
+
+	  <div class="form-group required control-label ">
+		<label class="control-label col-sm-2" for="email">Card Number:</label>
+		<div class="col-sm-9">
+		  <input type="text" class="form-control" id="email" placeholder="card Number" name="email" >
+		  
+		</div>
+	  </div>
+
+	  <div class="form-group required control-label">
+		<label class="control-label col-sm-2" for="fname">Card Verification Value:</label>
+		<div class="col-sm-9">
+		  <input type="text" class="form-control" id="fname" placeholder="Enter card Verification value" name="fname"  >
+		  
+		</div>
+	  </div>
+	   <div class="form-group required control-label">
+		<label class="control-label col-sm-2" for="lname">Name On Card:</label>
+		<div class="col-sm-9">
+		  <input type="text" class="form-control" id="lname" placeholder="Enter Name" name="lname">
+		  
+		</div>
+	  </div>
+	   <div class="form-group required control-label">
+		<label class="control-label col-sm-2" for="title">Business Name:</label>
+		<div class="col-sm-9">
+		  <input type="text" class="form-control" id="title" placeholder="Enter Business Name" name="title">
+		</div>
+	  </div>
+	   <div class="form-group required control-label">
+		<label class="control-label col-sm-2" for="cname">Expire Date:</label>
+		<div class="col-sm-9">
+		  <input type="text" class="form-control" id="cname" placeholder="Expire date" name="cname"></br>
+		</div>
+	  </div>
+
+
+
+	
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-9">
+	 
+	    <button href ="" type="submit" class="btn btn-success btn-lg float-left">Submit</button>
+            
+                    </div>
+       
+      </div>
+    </div>
+	
+
+
+
+  </form>
 		
-<!--Billing Page -->	
-<div class="w3l_banner_nav_right">
-	<div class="w3ls_w3l_banner_nav_right_grid">
-		<h3><b>Billing/ Shipping Information </b></h3
+	</div>	
 
-</div>
-
-
-
-<form class="form-horizontal" action="payment.html"  >
-
-<div class="form-group required control-label ">
-<label class="control-label col-sm-2" for="email">Email:</label>
-<div class="col-sm-9">
-<input type="email" class="form-control" id="email" placeholder="Enter Your email Address" name="email" required>
-
-</div>
-</div>
-
-
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="fname">First Name:</label>
-<div class="col-sm-9">
-<input type="text" class="form-control" id="fname" placeholder="Enter Your First Name" name="fname" pattern="[a-zA-Z]*"  required>
-
-</div>
-</div>
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="lname">Last Name:</label>
-<div class="col-sm-9">
-<input type="text" class="form-control" id="lname" placeholder="Enter Your Last Name" name="lname" pattern="[a-zA-Z]*" required>
-
-</div>
-</div>
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="title">Title:</label>
-<div class="col-sm-9">
-<input type="text" class="form-control" id="title" placeholder="Enter Title" name="title"required>
-</div>
-</div>
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="cname">Company Name:</label>
-<div class="col-sm-9">
-<input type="text" class="form-control" id="cname" placeholder="Enter Company Name" name="cname"required>
-</div>
-</div>
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="address">Address:</label>
-<div class="col-sm-9">
-<input type="text" class="form-control" id="address" placeholder="Enter Your Address" name="address"required>
-</div>
-</div>
-
-
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="city">City:</label>
-<div class="col-sm-9">
-<input type="city" class="form-control" id="city" placeholder="Enter Your city" name="city"required>
-</div>
-</div>
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="state">State/Province:</label>
-<div class="col-xs-9">
-<input type="state" class="form-control" id="state" placeholder="Enter Your State/Province" name="state"required>
-</div>
-</div>
-
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="state">Country:</label>
-<div class="col-sm-9" >
-<div class="dropdown">
-<select class="form-control">
-<option selected value="country">Select Country</option>
-<option  value="AI">Anguilla</option>
-<option  value="AG">Antigua and Barbuda</option>
-<option  value="AW">Aruba</option>
-<option  value="AU">Australia</option>
-<option  value="BS">Bahamas</option>
-<option  value="BB">Barbados</option>
-<option  value="BZ">Belize</option>
-<option  value="BM">Bermuda</option>
-<option  value="BR">Brazil</option>
-<option  value="CA">Canada</option>
-<option  value="KY">Cayman Islands</option>
-<option  value="CR">Costa Rica</option>
-<option  value="CW">Curacao</option>
-<option  value="DM">Dominica</option>
-<option  value="DO">Dominican Republic</option>
-<option  value="EC">Ecuador</option>
-<option  value="SV">El Salvador</option>
-<option  value="GD">Grenada</option>
-<option  value="GU">Guam</option>
-<option  value="GT">Guatemala</option>
-<option  value="HN">Honduras</option>
-<option  value="JM">Jamaica</option>
-<option  value="MQ">Martinique</option>
-<option  value="MX">Mexico</option>
-<option  value="NI">Nicaragua</option>
-<option  value="PR">Puerto Rico</option>
-<option  value="KN">Saint Kitts and Nevis</option>
-<option  value="LC">Saint Lucia</option>
-<option  value="TT">Trinidad and Tobago</option>
-<option  value="TC">Turks and Caicos Islands</option>
-<option  value="US">United States</option>
-<option  value="VG">Virgin Islands, British</option>
-<option  value="VI">Virgin Islands, U.S.</option>
-</select>
-</div>
-</div>
-</div>
-
-
-<!--	<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="state">State:</label>
-<div class="dropdown">
-<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select State</button>
-<ul class="dropdown-menu">
-<li><a href="#">HTML</a></li>
-<li><a href="#">CSS</a></li>
-<li><a href="#">JavaScript</a></li>
-</ul>
-</div>
-</div>
--->
-
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="zip">Zip Code:</label>
-<div class="col-sm-9">
-<input type="number" class="form-control" id="zip" placeholder="Enter Zip Code" name="zip"required>
-</div>
-</div>
-
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="pnu">Phone Number:</label>
-<div class="col-sm-9">
-<input type="tell" class="form-control" id="pnu" placeholder="Enter Your Phone Number" name="pnu" pattern="^\d\d\d\d\d\d\d\d\d\d$"required>
-</div>
-</div>
-
-<div class="form-group control-label">
-<label class="control-label col-sm-2" for="cmt">Comments:</label>
-<div class="col-sm-9" >
-<input type="text-area" class="form-control" id="cmt" placeholder="Enter comment / More Information" name="cmt">
-</div>
-</div>
-<!--
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="state">Country:</label>
-<div class="col-sm-10" >
-<div class="dropdown">
-<select class="form-control">
-<option selected value="country">Select Country</option>
-<option  value="AI">Anguilla</option>
-<option  value="AG">Antigua and Barbuda</option>
-<option  value="AW">Aruba</option>
-<option  value="AU">Australia</option>
-<option  value="BS">Bahamas</option>
-<option  value="BB">Barbados</option>
-<option  value="BZ">Belize</option>
-<option  value="BM">Bermuda</option>
-<option  value="BR">Brazil</option>
-<option  value="CA">Canada</option>
-<option  value="KY">Cayman Islands</option>
-<option  value="CR">Costa Rica</option>
-<option  value="CW">Curacao</option>
-<option  value="DM">Dominica</option>
-<option  value="DO">Dominican Republic</option>
-<option  value="EC">Ecuador</option>
-<option  value="SV">El Salvador</option>
-<option  value="GD">Grenada</option>
-<option  value="GU">Guam</option>
-<option  value="GT">Guatemala</option>
-<option  value="HN">Honduras</option>
-<option  value="JM">Jamaica</option>
-<option  value="MQ">Martinique</option>
-<option  value="MX">Mexico</option>
-<option  value="NI">Nicaragua</option>
-<option  value="PR">Puerto Rico</option>
-<option  value="KN">Saint Kitts and Nevis</option>
-<option  value="LC">Saint Lucia</option>
-<option  value="TT">Trinidad and Tobago</option>
-<option  value="TC">Turks and Caicos Islands</option>
-<option  value="US">United States</option>
-<option  value="VG">Virgin Islands, British</option>
-<option  value="VI">Virgin Islands, U.S.</option>
-</select>
-</div>
-</div>
-</div>
--->
-
-<!--
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="state">Country:</label>
-<div class="collapse navbar-collapse" id="bs-megadropdown-tabs" >
-<ul class="nav navbar-nav nav_1">
-				<li class="dropdown mega-dropdown active">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates<span class="caret"></span></a>				
-					<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-						<div class="w3ls_vegetables">
-							<ul>	
-								<li><a href="drive_way_gates.html">Drive Way Gates</a></li>
-								<li><a href="garden_gates.html">Garden Gates</a></li>
-							</ul>
-						</div>                  
-					</div>	
-</div>
-</div>
--->
-
-
-
-
-
-
-<div class="form-group">        
-<div class="col-sm-offset-2 col-sm-9">
-<div class="checkbox">
-  <label><input type="checkbox" name="remember" required> <b>Agree to the Terms of Service <b></label>
-</div>
-</div>
-</div>
-
-
-<div class="form-group">        
-<div class="col-sm-offset-2 col-sm-9">
-
-<button href ="" type="submit" class="btn btn-success btn-lg float-left">Submit</button>
-	
-			</div>
-
-</div>
-</div>
-
-
-
-
-</form>
-
-</div>	
 
 	
-
-
-
-
-<div class="clearfix"></div>
-</div>
+	  
+  
+  
+  
+	</form>
+		  
+	  </div>	
+	
+			
+		
+		
+	
+		
+		<div class="clearfix"></div>
+	</div>
 <!-- //banner -->
+
 
 <!-- //footer -->
 <div class="footer">

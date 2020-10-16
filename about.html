@@ -1,5 +1,5 @@
 <!--
-author: jayaprada A.B.C
+author: Diyunuge K.D.C.D.R
 -->
 <!DOCTYPE html>
 <html>
@@ -22,7 +22,7 @@ author: jayaprada A.B.C
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //font-awesome icons -->
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
@@ -34,7 +34,7 @@ author: jayaprada A.B.C
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		$(".scroll").click(function(event){
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
@@ -42,106 +42,52 @@ author: jayaprada A.B.C
 </script>
 <!-- start-smoth-scrolling -->
 </head>
-	
-<body>
+
+<body style="background-color: rgb(239, 222, 241);">
 <!-- header -->
-	<div class="agileits_header">
-		<div class="w3l_offers">
-			<a href="products.html">Today's special Offers !</a>
-		</div>
-		<div class="w3l_search">
-			<form action="#" method="post">
-				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
-				<input type="submit" value=" ">
-			</form>
-		</div>
-		<div class="product_list_header">  
-			<form action="#" method="post" class="last">
-                <fieldset>
-                    <input type="hidden" name="cmd" value="_cart" />
-                    <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="View your cart" class="button" />
-                </fieldset>
-            </form>
-		</div>
-		<div class="w3l_header_right">
-			<ul>
-				<li class="dropdown profile_details_drop">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i><span class="caret"></span></a>
-					<div class="mega-dropdown-menu">
-						<div class="w3ls_vegetables">
-							<ul class="dropdown-menu drp-mnu">
-								<li><a href="login.html">Login</a></li> 
-								<li><a href="login.html">Sign Up</a></li>
-							</ul>
-						</div>                  
-					</div>	
-				</li>
-			</ul>
-		</div>
-		<div class="w3l_header_right1">
-			<h2><a href="mail.html">Contact Us</a></h2>
-		</div>
-		<div class="clearfix"> </div>
+	<div style="background-color: purple;height: 40px;">
+		
 	</div>
 <!-- script-for sticky-nav -->
 	<script>
 	$(document).ready(function() {
 		 var navoffeset=$(".agileits_header").offset().top;
 		 $(window).scroll(function(){
-			var scrollpos=$(window).scrollTop(); 
+			var scrollpos=$(window).scrollTop();
 			if(scrollpos >=navoffeset){
 				$(".agileits_header").addClass("fixed");
 			}else{
 				$(".agileits_header").removeClass("fixed");
 			}
 		 });
-		 
+
 	});
 	</script>
-<!-- //script-for sticky-nav -->
+
 	<div class="logo_products">
-		<div class="container">
-			<div class="col-md-4 logo_agile">
+		<div class="container" style="width: 320px;
+		padding: 10px;
+		border: 5px solid gray;
+		">
+			<div class="col-md-4 logo_agile" style="background-color:#a23dbb;padding: 2	0px;">
 				<h1>
-					<a href="index.html">
-						<!--<span>G</span>rocery
-						<span>S</span>hoppy-->
-						<img src="Gates/Logo.png" alt=" " style="height: 140px;width: 140px;">
+					<a href="index.html" >
+						<img src="Gates/Logo.png" alt=" " 
+						style="height: 140px;width: 140px;position: left;margin-left: -80px;margin-top: -70px;margin-bottom: 2px;">
 					</a>
 				</h1>
-			</div>
-			
-			<div class="w3ls_logo_products_left1">
-				<ul class="special_items">
-					<li><a href="about.html" aria-hidden="true" style="position: right;">About Us</a><i>/</i></li>
-					<li><a href="about.html" aria-hidden="true">Contact Us</a><i>/</i></li>
-					<li><a href="products.html" aria-hidden="true">Policies</a><i>/</i></li>
-					<li><a href="services.html" aria-hidden="true">FAQ</a></li>
-					<li><a href="manufacture.html" aria-hidden="true">Manufactures</a><i>/</i></li>
-					<li><a href="link.html"aria-hidden="true"> Link</a></li>
-				</ul>
-			</div>
-			<div class="w3ls_logo_products_left1">
-				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto: LAOrnamental@Aol.com"> laornamental@aol.com</a></li>
-				</ul>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-<!-- //header -->
-<!-- products-breadcrumb -->
 	<div class="products-breadcrumb">
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li>About Us</li>
+				<li style="color: white;">About Us</li>
 			</ul>
 		</div>
 	</div>
-<!-- //products-breadcrumb -->
 <!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
@@ -156,156 +102,163 @@ author: jayaprada A.B.C
 				  </button>
 			   </div> 
 			   <!-- Collect the nav links, forms, and other content for toggling -->
-			   <div class="collapse navbar-collapse" id="bs-megadropdown-tabs" >
-				<ul class="nav navbar-nav nav_1">
-					<li class="dropdown mega-dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates<span class="caret"></span></a>				
-						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-							<div class="w3ls_vegetables">
-								<ul>	
-									<li><a href="drive_way_gates.html">Drive Way Gates</a></li>
-									<li><a href="garden_gates.html">Garden Gates</a></li>
-								</ul>
-							</div>                  
-						</div>				
-					</li>
-					<li class="dropdown mega-dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Openers<span class="caret"></span></a>				
-						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-							<div class="w3ls_vegetables">
-								<ul>	
-									<li><a href="Openers.html#ramset">Ramset</a></li>
-									<li><a href="Openers.html#faac">FAAC</a></li>
-									<li><a href="Openers.html#apollo">Apollo</a></li>
-									<li><a href="Openers.html#bft">BFT</a></li>
-									<li><a href="Openers.html#pm">Power Master</a></li>
-								</ul>
-							</div>                  
-						</div>				
-					</li>
-					<li><a href="">Fencing</a></li>
+				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs" >
+					<ul class="nav navbar-nav nav_1">
 						<li class="dropdown mega-dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Railling<span class="caret"></span></a>				
-						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-							<div class="w3ls_vegetables">
-								<ul>	
-									<li><a href="railling.html">Modern Balcony Railling</a></li>
-								</ul>
-							</div>                  
-						</div>				
-					</li>
-					<li class="dropdown mega-dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Telephone Entry<span class="caret"></span></a>
-						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-							<div class="w3ls_vegetables">
-								<ul>
-									<li><a href="tpEntry.html#lift_master">Chamberlain</a></li>
-									<li><a href="tpEntry.html#aas">American Access Systms</a></li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+										<li><a href="drive_way_gates.html">Drive Way Gates</a></li>
+										<li><a href="garden_gates.html">Garden Gates</a></li>
+									</ul>
+								</div>                  
+							</div>				
+						</li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Openers<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+										<li><a href="Openers.html#ramset">Ramset</a></li>
+										<li><a href="Openers.html#faac">FAAC</a></li>
+										<li><a href="Openers.html#apollo">Apollo</a></li>
+										<li><a href="Openers.html#bft">BFT</a></li>
+										<li><a href="Openers.html#pm">Power Master</a></li>
+									</ul>
+								</div>                  
+							</div>				
+						</li>
+						<li><a href="">Fencing</a></li>
+							<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Railling<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+										<li><a href="odern_balcony_railing.html">Modern Balcony Railling</a></li>
+									</ul>
+								</div>                  
+							</div>				
+						</li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Telephone Entry<span class="caret"></span></a>
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>
+										<li><a href="tpEntry.html#lift_master">Chamberlain</a></li>
+										<li><a href="tpEntry.html#aas">American Access Systms</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Safety Equipments<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+										<li><a href="safety_loops.html">Safety Loops</a></li>
+										<li><a href="loop_detector.html">Loop Detector</a></li>
+										<li><a href="safety_photo.html">Safety Photo Cell</a></li>
+										
+									</ul>
+								</div>                  
+							</div>				
+						</li>
+						<li><a href="">Control Board</a></li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+										<li><a href="linear.html">Linear/Multi_code</a></li>
+										<li><a href="dearking.html">Dearking</a></li>
+										<li><a href="lift_master.html">Lift Master</a></li>
+										<li><a href="key_stone.html">Key Stone</a></li>
+										<li><a href="long_range.html">Long Range</a></li>
+									</ul>
+								</div>                  
+							</div>				
+						</li>
+						
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Remote Controls<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+										<li><a href="">Multi_code</a></li>
+										<li><a href="">Transmittor Solution</a></li>
+										<li><a href="">Linear</a></li>
+										<li><a href="">Dearking</a></li>
+										<li><a href="">BFT.SEA.FAAC</a></li>
+										<li><a href="">long range</a></li>
+							<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+										<li><a href="linear.html">Linear/Multi_code</a></li>
+										<li><a href="dearking.html">Dearking</a></li>
+										<li><a href="lift_master.html">Lift Master</a></li>
+										<li><a href="key_stone.html">Key Stone</a></li>
+										<li><a href="long_range.html">Long Range</a></li>
+									</ul>
+								</div>                  
+							</div>				
+						</li>
+									</ul>
+								</div>                  
+							</div>				
+						</li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates Accesories<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+				
+
+										<li><a href="cantileverwheel.html">Cantilever Wheels</a></li>
+										<li><a href="vtrack.html">VTrack-Guide-Vwheels</a></li>
+										<li><a href="hingers.html">Hingers</a></li>
+										<li><a href="latch.html">Locks-Latches</a></li>
+						
 								</ul>
 							</div>
-						</div>
-					</li>
-				
-					<li class="dropdown mega-dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Safety Equipments<span class="caret"></span></a>				
-						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-							<div class="w3ls_vegetables">
-								<ul>	
-									<li><a href="safety_loops.html">Safety Loops</a></li>
-									<li><a href="loop_detector.html">Loop Detector</a></li>
-									<li><a href="safety_photo.html">Safety Photo Cell</a></li>
-									
-								</ul>
-							</div>                  
-						</div>				
-					</li>
-					
-					
-					
-					
-					<li><a href="">Control Board</a></li>
-					<li class="dropdown mega-dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>				
-						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-							<div class="w3ls_vegetables">
-								<ul>	
-									<li><a href="linear.html">Linear/Multi_code</a></li>
-									<li><a href="dearking.html">Dearking</a></li>
-									<li><a href="lift_master.html">Lift Master</a></li>
-									<li><a href="key_stone.html">Key Stone</a></li>
-									<li><a href="long_range.html">Long Range</a></li>
-								</ul>
-							</div>                  
-						</div>				
-					</li>
-					
-					<li class="dropdown mega-dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Remote Controls<span class="caret"></span></a>				
-						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-							<div class="w3ls_vegetables">
-								<ul>	
-									<li><a href="">Multi_code</a></li>
-									<li><a href="">Transmittor Solution</a></li>
-									<li><a href="">Linear</a></li>
-									<li><a href="">Dearking</a></li>
-									<li><a href="">BFT.SEA.FAAC</a></li>
-									<li><a href="">long range</a></li>
-						<li class="dropdown mega-dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>				
-						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-							<div class="w3ls_vegetables">
-								<ul>	
-									<li><a href="linear.html">Linear/Multi_code</a></li>
-									<li><a href="dearking.html">Dearking</a></li>
-									<li><a href="lift_master.html">Lift Master</a></li>
-									<li><a href="key_stone.html">Key Stone</a></li>
-									<li><a href="long_range.html">Long Range</a></li>
-								</ul>
-							</div>                  
-						</div>				
-					</li>
-								</ul>
-							</div>                  
-						</div>				
-					</li>
-					<li class="dropdown mega-dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates Accesories<span class="caret"></span></a>				
-						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-							<div class="w3ls_vegetables">
-								<ul>	
-			
-
-									<li><a href="cantileverwheel.html">Cantilever Wheels</a></li>
-									<li><a href="vtrack.html">VTrack-Guide-Vwheels</a></li>
-									<li><a href="hingers.html">Hingers</a></li>
-									<li><a href="latch.html">Locks-Latches</a></li>
-					
-							</ul>
-						</div>
-					  </div>
-					
-					</li>	
-					</div>
-				</ul>
+						  </div>
+						
+						</li>	
+						
+					</ul>
 				 </div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
-	</div>
+		
+			<style> 
+.form-group.required .control-label:after {
+  content:"*";
+  color:red;
+}
+</style>
 
-		<div class="w3l_banner_nav_right">
+		
+	<!--Billing Page -->
+
+<div class="w3l_banner_nav_right">
 <!-- about -->
+		
+			<div class="w3ls_w3l_banner_nav_right_grid">
+				<h3><b>About Us </b></h3>
+	
 		<div class="privacy about"> 
-			<h3><b>About Us</b></h3>
 		
 			
 			<!--<p class="animi"> --->
 				<p><strong>Aluminum The Material of choice:</strong>
- Aluminium is a soft and lightweight metal with a dull silver-gray appearance.  Aluminium <br soft> is about one-third as dense as steel or copper is
+ Aluminium is a soft and lightweight metal with a dull silver-gray appearance.  Aluminium  is about one-third as dense as steel or copper is
 malleable ductile, and easily machined and cast; and has excellent corrosion resistance and durability due to the protective oxide layer. It is also
 nonmagnetic and nonsparking and is the second most malleable metal (most being gold) and the sixth most ductile. Whether measured in terms of
 quantity or value, the use of aluminium exceeds that of any other metal except iron and it is important in virtually all segments of the world economy.
-Aluminium alloys form vital components of aircrafts and rockets as a result of their high strength to weight ratio. Aluminium <br soft> was selected as the material
-to be used for the apex of the Washington Monument, at a time when one ounce cost twice the <br soft>daily wages of a labourer.
+Aluminium alloys form vital components of aircrafts and rockets as a result of their high strength to weight ratio. Aluminium was selected as the material
+to be used for the apex of the Washington Monument, at a time when one ounce cost twice the daily wages of a labourer.
 </p>
 <div class="agile_about_grids">
 	<div class="col-md-6 agile_about_grid_right">
@@ -349,9 +302,9 @@ to be used for the apex of the Washington Monument, at a time when one ounce cos
 			</br>
 			
 		<p>	Aluminium was, when it was first discovered, extremely difficult to separate from the rocks it was part of. Since the whole of Earth's aluminium was
-bound up in the form of compounds, it was the most difficult metal on earth to get, despite the fact that <br soft>it is one of the planet's most common. The reason
-is that aluminium is oxidized very rapidly and that its oxide is an extremely <br soft>stable compound that, unlike rust on steel, does not flake off. The very reason
-for which aluminium is used in many applications<br soft>
+bound up in the form of compounds, it was the most difficult metal on earth to get, despite the fact that it is one of the planet's most common. The reason
+is that aluminium is oxidized very rapidly and that its oxide is an extremely stable compound that, unlike rust on steel, does not flake off. The very reason
+for which aluminium is used in many applications
  is why it is so hard to produce.</p></br>
 
 <p>Recovery of this metal from scrap (via recycling) has become an important component of the aluminium industry. Recycling involves simply melting the
@@ -390,47 +343,23 @@ upper-class neighborhoods, and are now available for every market segment contin
 		<div class="clearfix"></div>
 	</div>
 </div>
-<!-- //banner -->
-<!-- team -->
-<center>	<div class="team">
 		
-			<h3>Owners, Managers & Senior Executives</h3>
-			<div class="agileits_team_grids">
-				<div class="col-md-3 agileits_team_grid">
-
-				</div>
-				<div class="col-md-3 agileits_team_grid">
-					<img src="it16076594img/profile.png" alt=" " class="img-responsive" />
-					<h4>Jesus Velunza</h4>
-					<p>Owner</p>
-					<ul class="agileits_social_icons agileits_social_icons_team">
-						<a href="#" class="telLink badge badge-light text-primary" data-dialnumber="3056960419" title="3056960419"><span class="phoneBtn">View Phone</span><span class="phoneDisp" style="display:none;" itemprop="telephone"> (305) 696-0419</span></a>
-						
-					</ul>
-				</div>
-				<div class="col-md-3 agileits_team_grid">
-					<img src="it16076594img/profile.png" alt=" " class="img-responsive" />
-					<h4>V.P Aleida Velunza</h4>
-					<p>Manager</p>
-					<ul class="agileits_social_icons agileits_social_icons_team">
-						<a href="#" class="telLink badge badge-light text-primary" data-dialnumber="3056960419" title="3056960419"> <span class="phoneBtn">View Phone</span><span class="phoneDisp" style="display:none;" itemprop="telephone"> (305) 696-0419</span></a>
-				</div>
-				
-				<div class="col-md-3 agileits_team_grid">
-
-				</div>
-				
-				<div class="clearfix"> </div>
-			</div>
+	</div>	
 		</div>
-<!-- footer -->
+		
+		
+	
+		
+		
+<!-- //banner -->
+
+<!-- //footer -->
 <div class="footer">
 	<div class="container" style="color: white;">
 			<div class="clearfix"> </div>
 		</div>
 	</div>
 </div>
-<!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script>
