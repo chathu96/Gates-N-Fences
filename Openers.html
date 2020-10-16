@@ -32,6 +32,7 @@ author: jayaprada A.B.C
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/bootbox.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){
@@ -45,11 +46,20 @@ author: jayaprada A.B.C
 
 <body style="background-color: rgb(239, 222, 241);">
 <!-- header -->
+<div class="product_list_header agileits_header">
+	<form action="#" method="post" class="last">
+		<fieldset>
+			<input type="hidden" name="cmd" value="_cart">
+			<input type="hidden" name="display" value="1">
+			<input type="submit" name="submit" value="View your cart" class="button btn button--round-l">
+		</fieldset>
+	</form>
+</div>
 	<div style="background-color: purple;height: 40px;">
 		
 	</div>
 <!-- script-for sticky-nav -->
-	<script>
+	<!-- <script>
 	$(document).ready(function() {
 		 var navoffeset=$(".agileits_header").offset().top;
 		 $(window).scroll(function(){
@@ -62,7 +72,7 @@ author: jayaprada A.B.C
 		 });
 
 	});
-	</script>
+	</script> -->
 
 	<div class="logo_products">
 		<div class="container" style="width: 320px;
@@ -84,7 +94,7 @@ author: jayaprada A.B.C
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li>Openers</li>
+				<li style="color: white;">Openers</li>
 			</ul>
 		</div>
 	</div>
