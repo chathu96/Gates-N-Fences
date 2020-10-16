@@ -11,6 +11,18 @@ function onFormSubmit() {
     }
 }
 
+function readFormData() {
+    var formData = {};
+    formData["fullName"] = document.getElementById("fullName").value;
+    formData["address"] = document.getElementById("address").value;
+    formData["city"] = document.getElementById("city").value;
+    formData["state"] = document.getElementById("state").value;
+    formData["zipcode"] = document.getElementById("zipcode").value;
+    formData["email"] = document.getElementById("email").value;
+    formData["quotation"] = document.getElementById("quotation").value;
+    return formData;
+}
+
 function insertNewRecord(data) {
     var table = document.getElementById("contactList").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);

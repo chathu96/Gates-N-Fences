@@ -49,30 +49,30 @@ table.list{
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid purple;
     text-align: left;
     padding: 8px;
 }
 tr:nth-child(even),table.list thead>tr {
-    background-color: #dddddd;
+    background-color: rgb(200, 116, 207);
 }
 
 input[type=text], input[type=number] {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(200, 116, 207);
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 input[type=submit]{
     width: 30%;
-    background-color: #ddd;
+    background-color: rgb(184, 100, 187);
     color: #000;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 10px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -275,14 +275,14 @@ label.validation-error{
 			</nav>
 		</div>
 		<div class="w3l_banner_nav_right">
-			<div class="w3ls_w3l_banner_nav_right_grid">
+			<div class="privacy about"> 
 				<h3>Contact Us</h3>
 				<table>
 					<tr>
 						<td>
 							<form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
 								<div>
-									<label>First Name</label>
+									<label>First Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
 									<input type="text" name="fullName" id="fullName">
 								</div>
 								<div>
@@ -298,8 +298,8 @@ label.validation-error{
 									<input type="text" name="state" id="state">
 								</div>
 								<div>
-									<label>Zip Code</label>
-									<input type="text" name="zipcode" id="zipcode">
+									<label>Zip Code*</label><label class="validation-error hide"id="zipcodeErr">This field is required.</label>
+									<input type="text" name="zipcode"id="zipcode">
 								</div>
 								<div>
 									<label>Email Address</label>
@@ -309,9 +309,17 @@ label.validation-error{
 									<textarea rows="5" cols="20" name="quotation" id="quotation" form="usrform">Get Quotation</textarea>
 								</div>
 								<div  class="form-action-buttons">
-									<input type="submit" value="Submit">
+									<input type="submit" value="Submit" style="background-color: rgb(45, 207, 45);border: #000;">
 								</div>
 							</form>
+						</td>
+						<td>
+							<table class="list" id="contactList">
+								
+								<tbody>
+			
+								</tbody>
+							</table>
 						</td>
 					</tr>
 				</table>
@@ -324,6 +332,14 @@ label.validation-error{
 	</div>
 	<div class="clearfix"></div>
 </div>
+<section id="contact" style="background-color: #a19da1;">
+	<div class="container">
+		<div class="w3ls_w3l_banner_nav_right_grid">
+			<h3>Location</h3>
+
+					  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.41605594316943!2d-80.25869846918738!3d25.847848874696716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b08c694c9b4f%3A0x34288a3ec7e713d4!2sL%20A%20Ornamental%20%2F%20Gate%20Operators!5e0!3m2!1sen!2slk!4v1602834471172!5m2!1sen!2slk" width="100%" height="450" frameborder="0" style="border:0; margin: 0;padding: 0;box-sizing: border-box;" allowfullscreen></iframe>
+	</div>
+</section><!--/#contact-us-->
 <!-- footer -->
 <div class="footer">
 	<div class="container" style="color: white;">
