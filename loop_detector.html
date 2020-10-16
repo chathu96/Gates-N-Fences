@@ -22,19 +22,19 @@ author: Diyunuge K.D.C.D.R
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //font-awesome icons -->
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <!-- //js -->
-<link href='//fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		$(".scroll").click(function(event){
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
@@ -42,87 +42,52 @@ author: Diyunuge K.D.C.D.R
 </script>
 <!-- start-smoth-scrolling -->
 </head>
-	
-<body>
+
+<body style="background-color: rgb(239, 222, 241);">
 <!-- header -->
-	<div class="agileits_header">
-		<div class="w3l_offers">
-			<a href="products.html">Today's special Offers !</a>
-		</div>
-		<div class="w3l_search">
-			<form action="#" method="post">
-				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
-				<input type="submit" value=" ">
-			</form>
-		</div>
-		<div class="product_list_header">  
-			<form action="#" method="post" class="last">
-                <fieldset>
-                    <input type="hidden" name="cmd" value="_cart" />
-                    <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="View your cart" class="button" />
-                </fieldset>
-            </form>
-		</div>
+	<div style="background-color: purple;height: 40px;">
+		
 	</div>
 <!-- script-for sticky-nav -->
-	<script>	
+	<script>
 	$(document).ready(function() {
 		 var navoffeset=$(".agileits_header").offset().top;
 		 $(window).scroll(function(){
-			var scrollpos=$(window).scrollTop(); 
+			var scrollpos=$(window).scrollTop();
 			if(scrollpos >=navoffeset){
 				$(".agileits_header").addClass("fixed");
 			}else{
 				$(".agileits_header").removeClass("fixed");
 			}
 		 });
-		 
+
 	});
 	</script>
-<!-- //script-for sticky-nav -->
+
 	<div class="logo_products">
-		<div class="container">
-			<div class="col-md-4 logo_agile">
+		<div class="container" style="width: 320px;
+		padding: 10px;
+		border: 5px solid gray;
+		">
+			<div class="col-md-4 logo_agile" style="background-color:#a23dbb;padding: 2	0px;">
 				<h1>
-					<a href="index.html">
-						<!--<span>G</span>rocery
-						<span>S</span>hoppy-->
-						<img src="Gates/Logo.png" alt=" " style="height: 140px;width: 140px;">
+					<a href="index.html" >
+						<img src="Gates/Logo.png" alt=" " 
+						style="height: 140px;width: 140px;position: left;margin-left: -80px;margin-top: -70px;margin-bottom: 2px;">
 					</a>
 				</h1>
-			</div>
-			
-			<div class="w3ls_logo_products_left1">
-				<ul class="special_items">
-					<li><a href="about.html" aria-hidden="true" style="position: right;">About Us</a><i>/</i></li>
-					<li><a href="about.html" aria-hidden="true">Contact Us</a><i>/</i></li>
-					<li><a href="products.html" aria-hidden="true">Policies</a><i>/</i></li>
-					<li><a href="services.html" aria-hidden="true">FAQ</a></li>
-					<li><a href="manufacture.html" aria-hidden="true">Manufactures</a><i>/</i></li>
-					<li><a href="link.html"aria-hidden="true"> Link</a></li>
-				</ul>
-			</div>
-			<div class="w3ls_logo_products_left1">
-				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto: LAOrnamental@Aol.com"> laornamental@aol.com</a></li>
-				</ul>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-<!-- //header -->
-<!-- products-breadcrumb -->
 	<div class="products-breadcrumb">
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li>Loops Detectors</li>
+				<li style="color: white;">Loop - Detectors</li>
 			</ul>
 		</div>
 	</div>
-<!-- //header -->
 <!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
@@ -170,7 +135,7 @@ author: Diyunuge K.D.C.D.R
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>	
-										<li><a href="railling.html">Modern Balcony Railling</a></li>
+										<li><a href="odern_balcony_railing.html">Modern Balcony Railling</a></li>
 									</ul>
 								</div>                  
 							</div>				
@@ -186,7 +151,6 @@ author: Diyunuge K.D.C.D.R
 								</div>
 							</div>
 						</li>
-					
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Safety Equipments<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
@@ -200,10 +164,6 @@ author: Diyunuge K.D.C.D.R
 								</div>                  
 							</div>				
 						</li>
-						
-						
-						
-						
 						<li><a href="">Control Board</a></li>
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>				
@@ -266,15 +226,16 @@ author: Diyunuge K.D.C.D.R
 						  </div>
 						
 						</li>	
-						</div>
+						
 					</ul>
 				 </div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
+		
 	<!--Loop Detector Page -->	
 		<div class="w3l_banner_nav_right">
 			<div class="w3ls_w3l_banner_nav_right_grid">
-				<h3><b>Loops Detectors</b></h3>
+				<h3><b>Loop Detectors</b></h3>
 				<div class="w3ls_w3l_banner_nav_right_grid1">
 				
 					<div class="col-md-3 w3ls_w3l_banner_left">
@@ -294,12 +255,12 @@ author: Diyunuge K.D.C.D.R
 										<div class="snipcart-details">
 											<form action="#" method="post">
 												<fieldset>
-													<input type="hidden" name="cmd" value="" />
+													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="Drive way Gate 1" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="item_name" value="EMX D-TEK Loop Detector for Gate and Traffic Control" />
+													<input type="hidden" name="amount" value="103.95" />
+													<input type="hidden" name="discount_amount" value="0.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 					                                <input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
@@ -333,9 +294,9 @@ author: Diyunuge K.D.C.D.R
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="item_name" value="EMX D-TEK Loop Detector for Gate and Traffic Control-12V AC/ DC" />
+													<input type="hidden" name="amount" value="103.95" />
+													<input type="hidden" name="discount_amount" value="0.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
@@ -369,9 +330,9 @@ author: Diyunuge K.D.C.D.R
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="item_name" value="EMX D-TEK Loop Detector for Gate and Traffic Control -220V" />
+													<input type="hidden" name="amount" value="103.95" />
+													<input type="hidden" name="discount_amount" value="0.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
@@ -405,9 +366,9 @@ author: Diyunuge K.D.C.D.R
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="item_name" value="EMX D-TEK Loop Detector for Gate and Traffic Control - 24V DC" />
+													<input type="hidden" name="amount" value="103.95" />
+													<input type="hidden" name="discount_amount" value="0.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
@@ -442,8 +403,7 @@ author: Diyunuge K.D.C.D.R
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
 											<a href="single.html"><img src="it16076594img/loopdetector/2.jpg" alt=" " class="img-responsive" /></a>
-											<p>
-EMX LP D-TEK Low Power Loop Detector </p>
+											<p>EMX LP D-TEK Low Power Loop Detector </p>
 											<h4><center>$105.95</center></h4>
 										</div>
 										<div class="snipcart-details">
@@ -451,10 +411,10 @@ EMX LP D-TEK Low Power Loop Detector </p>
 												<fieldset>
 													<input type="hidden" name="cmd" value="" />
 													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="business" value="EMX LP D-TEK Low Power Loop Detector  " />
 													<input type="hidden" name="item_name" value="Drive way Gate 1" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="amount" value="105.95" />
+													<input type="hidden" name="discount_amount" value="0.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 					                                <input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
@@ -488,9 +448,9 @@ EMX LP D-TEK Low Power Loop Detector </p>
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="item_name" value="EMX Ultra II D-TEK Vehicle Loop Detector " />
+													<input type="hidden" name="amount" value="109.95" />
+													<input type="hidden" name="discount_amount" value="0.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
@@ -515,8 +475,7 @@ EMX LP D-TEK Low Power Loop Detector </p>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
 											<a href="single.html"><img src="it16076594img/loopdetector/6.jpg" alt=" " class="img-responsive" /></a>
-											<p>EMX D-TEK MVP Multi Voltage Power
-Universal Loop Detector</p>
+											<p>EMX D-TEK MVP Multi Voltage Power Universal Loop Detector</p>
 											<h4><center>$109.95</center> </h4>
 										</div>
 										<div class="snipcart-details">
@@ -525,9 +484,9 @@ Universal Loop Detector</p>
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="item_name" value="EMX D-TEK MVP Multi Voltage Power Universal Loop Detector" />
+													<input type="hidden" name="amount" value="109.95" />
+													<input type="hidden" name="discount_amount" value="0.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
@@ -561,9 +520,9 @@ Universal Loop Detector</p>
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="item_name" value="EMX Ultra II D-TEK Vehicle Loop Detector" />
+													<input type="hidden" name="amount" value="109.95" />
+													<input type="hidden" name="discount_amount" value="0.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
@@ -614,9 +573,9 @@ Universal Loop Detector</p>
 													<input type="hidden" name="cmd" value="" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="Drive way Gate 1" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="item_name" value="Elite CSW200 UL Gate Operator Parts - Elite A-ELD Plug-In Loop Detector" />
+													<input type="hidden" name="amount" value="95.95" />
+													<input type="hidden" name="discount_amount" value="0.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 					                                <input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
@@ -650,9 +609,9 @@ Universal Loop Detector</p>
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="item_name" value="RENO H1 PC Board Style Loop Detector, RENO Exit Loop Detector" />
+													<input type="hidden" name="amount" value="79.95" />
+													<input type="hidden" name="discount_amount" value="0.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
@@ -677,10 +636,7 @@ Universal Loop Detector</p>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
 											<a href="single.html"><img src="it16076594img/loopdetector/12.jpg" alt=" " class="img-responsive" /></a>
-											<p>Diablo Controls DSP-50
-Probe Kit Vehicle Loop
-Detector to be use as
-an Exit Device only</p>
+											<p>Diablo Controls DSP-50 Probe Kit Vehicle Loop Detector to be use as an Exit Device only</p>
 											<h4><center>$196.95</center> </h4>
 											
 										</div>
@@ -690,8 +646,8 @@ an Exit Device only</p>
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
+													<input type="hidden" name="item_name" value="Diablo Controls DSP-50 Probe Kit Vehicle Loop Detector to be use as an Exit Device" />
+													<input type="hidden" name="amount" value="196.95" />
 													<input type="hidden" name="discount_amount" value="1.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
@@ -717,8 +673,7 @@ an Exit Device only</p>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
 											<a href="single.html"><img src="it16076594img/loopdetector/10.png" alt=" " class="img-responsive" /></a>
-											<p>RENO AX3 Series - Single Channel Loop Detector -
-Vehicle Detector Sensor -120V</p>
+											<p>RENO AX3 Series - Single Channel Loop Detector -Vehicle Detector Sensor -120V</p>
 											<h4><center>$102.95 </center></h4>
 										</div>
 										<div class="snipcart-details">
@@ -727,9 +682,9 @@ Vehicle Detector Sensor -120V</p>
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="lahsun sev" />
-													<input type="hidden" name="amount" value="3.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="item_name" value="RENO AX3 Series - Single Channel Loop Detector -Vehicle Detector Sensor -120V" />
+													<input type="hidden" name="amount" value="102.95" />
+													<input type="hidden" name="discount_amount" value="0.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
@@ -753,149 +708,69 @@ Vehicle Detector Sensor -120V</p>
 		</div>
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		<div class="clearfix"></div>
 	</div>
-<!-- //banner -->
-<!-- //banner -->
-<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="col-md-3 w3_footer_grid">
-				<h3>information</h3>
-				<ul class="w3_footer_grid_list">
-					<li><a href="events.html">Events</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="products.html">Best Deals</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="short-codes.html">Short Codes</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 w3_footer_grid">
-				<h3>policy info</h3>
-				<ul class="w3_footer_grid_list">
-					<li><a href="faqs.html">FAQ</a></li>
-					<li><a href="privacy.html">privacy policy</a></li>
-					<li><a href="privacy.html">terms of use</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 w3_footer_grid">
-				<h3>what in stores</h3>
-				<ul class="w3_footer_grid_list">
-					<li><a href="pet.html">Pet Food</a></li>
-					<li><a href="frozen.html">Frozen Snacks</a></li>
-					<li><a href="kitchen.html">Kitchen</a></li>
-					<li><a href="products.html">Branded Foods</a></li>
-					<li><a href="household.html">Households</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 w3_footer_grid">
-				<h3>twitter posts</h3>
-				<ul class="w3_footer_grid_list1">
-					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>01 day ago</i><span>Non numquam <a href="#">http://sd.ds/13jklf#</a>
-						eius modi tempora incidunt ut labore et
-						<a href="#">http://sd.ds/1389kjklf#</a>quo nulla.</span></li>
-					<li><label class="fa fa-twitter" aria-hidden="true"></label><i>02 day ago</i><span>Con numquam <a href="#">http://fd.uf/56hfg#</a>
-						eius modi tempora incidunt ut labore et
-						<a href="#">http://fd.uf/56hfg#</a>quo nulla.</span></li>
-				</ul>
-			</div>
+<!-- //footer -->
+<div class="footer">
+	<div class="container" style="color: white;">
 			<div class="clearfix"> </div>
-			<div class="agile_footer_grids">
-				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
-					<div class="w3_footer_grid_bottom">
-						<h4>100% secure payments</h4>
-						<img src="images/card.png" alt=" " class="img-responsive" />
-					</div>
-				</div>
-				<div class="col-md-3 w3_footer_grid agile_footer_grids_w3_footer">
-					<div class="w3_footer_grid_bottom">
-						<h5>connect with us</h5>
-						<ul class="agileits_social_icons">
-							<li><a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="google"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href="#" class="dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="wthree_footer_copy">
-				<p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-			</div>
 		</div>
 	</div>
-<!-- //footer -->
+</div>
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){
-    $(".dropdown").hover(            
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-            $(this).toggleClass('open');        
-        },
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-            $(this).toggleClass('open');       
-        }
-    );
+$(".dropdown").hover(
+	function() {
+		$('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+		$(this).toggleClass('open');
+	},
+	function() {
+		$('.dropdown-menu', this).stop( true, true ).slideUp("slow");
+		$(this).toggleClass('open');
+	}
+);
 });
 </script>
 <!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear'
+			};
+		*/
+
+		$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+</script>
 <!-- //here ends scrolling icon -->
 <script src="js/minicart.js"></script>
 <script>
-		paypal.minicart.render();
+	paypal.minicart.render();
 
-		paypal.minicart.cart.on('checkout', function (evt) {
-			var items = this.items(),
-				len = items.length,
-				total = 0,
-				i;
+	paypal.minicart.cart.on('checkout', function (evt) {
+		var items = this.items(),
+			len = items.length,
+			total = 0,
+			i;
 
-			// Count the number of each item in the cart
-			for (i = 0; i < len; i++) {
-				total += items[i].get('quantity');
-			}
+		// Count the number of each item in the cart
+		for (i = 0; i < len; i++) {
+			total += items[i].get('quantity');
+		}
 
-			if (total < 3) {
-				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
-				evt.preventDefault();
-			}
-		});
+		if (total < 3) {
+			alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+			evt.preventDefault();
+		}
+	});
 
-	</script>
+</script>
 </body>
 </html>
