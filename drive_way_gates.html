@@ -261,7 +261,7 @@ author: jayaprada A.B.C
 													<input type="hidden" name="currency_code" value="USD" />
 					                                <input type="hidden" name="return" value=" " />
 													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
+													<input type="submit" name="submit" value="Add to cart" class="button" id="btnShowMsg" onClick='showMessage()'/>
 												</fieldset>
 											</form>
 										</div>
@@ -748,6 +748,11 @@ $(".dropdown").hover(
 		}
 	});
 
+</script>
+<script type="text/javascript">
+	function showMessage(){
+		alert("Succsessfully Saved");
+	}
 </script>
 </body>
 </html>
