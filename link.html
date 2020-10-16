@@ -1,5 +1,5 @@
 <!--
-author: Diyunuge K.D.C.D.R
+author: jayaprada A.B.C
 -->
 <!DOCTYPE html>
 <html>
@@ -40,12 +40,32 @@ author: Diyunuge K.D.C.D.R
 		});
 	});
 </script>
-<!-- start-smoth-scrolling -->
+<style>
+.button {
+	background-color: purple; 
+	border: none;
+	color: white;
+	padding: 20px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	margin-left: 450px;
+	margin-right: 450px;
+	outline-color: aliceblue;
+  }
+  
+  .button1 {font-size: 13px;}
+
+  .button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  </style>
 </head>
 
 <body style="background-color: rgb(239, 222, 241);">
-<!-- header -->
-	<div class="product_list_header agileits_header" >
+	<div id="floater" class="product_list_header agileits_header hidden" >
 		<form action="#" method="post" class="last">
 			<fieldset>
 				<input type="hidden" name="cmd" value="_cart">
@@ -54,26 +74,21 @@ author: Diyunuge K.D.C.D.R
 			</fieldset>
 		</form>
 	</div>
+	<script>
+		$(window).scroll(function() {
+    var winScrollTop = $(window).scrollTop();
+    var winHeight = $(window).height();
+    var floaterHeight = $('#floater').outerHeight(true);
+    var fromBottom = 500;
+    var top = winScrollTop + winHeight - floaterHeight - fromBottom;
+	$('#floater').css({'top': top + 'px'});
+});
+	</script>
+	
+<!-- header -->
 	<div style="background-color: purple;height: 40px;">
 		
 	</div>
-<!-- script-for sticky-nav -->
-	<!-- <script>
-	$(document).ready(function() {
-		 var navoffeset=$(".product_list_header").offset().top;
-		 $(window).scroll(function(){
-			var scrollpos=$(window).scrollTop();
-			if(scrollpos >=navoffeset){
-				// $(".product_list_header").addClass("cartfixed");
-				// $(".product_list_header").addClass("agileits_header");
-			}else{
-				// $(".product_list_header").removeClass("cartfixed");
-				// $(".product_list_header").removeClass("agileits_header");
-			}
-		 });
-
-	});
-	</script> -->
 
 	<div class="logo_products">
 		<div class="container" style="width: 320px;
@@ -95,7 +110,7 @@ author: Diyunuge K.D.C.D.R
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li style="color: white;">Billing / Shipping Information</li>
+				<li>Link</li>
 			</ul>
 		</div>
 	</div>
@@ -247,271 +262,39 @@ author: Diyunuge K.D.C.D.R
 			 </div><!-- /.navbar-collapse -->
 		</nav>
 	</div>
-			<style> 
-.form-group.required .control-label:after {
-  content:"*";
-  color:red;
-}
-</style>
-
-		
-<!--Billing Page -->	
-<div class="w3l_banner_nav_right">
-	<div class="w3ls_w3l_banner_nav_right_grid">
-		<h3><b>Billing/ Shipping Information </b></h3
-
-</div>
-
-
-
-<form class="form-horizontal" action="payment.html"  >
-
-<div class="form-group required control-label ">
-<label class="control-label col-sm-2" for="email">Email:</label>
-<div class="col-sm-9">
-<input type="email" class="form-control" id="email" placeholder="Enter Your email Address" name="email" required>
-
-</div>
-</div>
-
-
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="fname">First Name:</label>
-<div class="col-sm-9">
-<input type="text" class="form-control" id="fname" placeholder="Enter Your First Name" name="fname" pattern="[a-zA-Z]*"  required>
-
-</div>
-</div>
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="lname">Last Name:</label>
-<div class="col-sm-9">
-<input type="text" class="form-control" id="lname" placeholder="Enter Your Last Name" name="lname" pattern="[a-zA-Z]*" required>
-
-</div>
-</div>
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="title">Title:</label>
-<div class="col-sm-9">
-<input type="text" class="form-control" id="title" placeholder="Enter Title" name="title"required>
-</div>
-</div>
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="cname">Company Name:</label>
-<div class="col-sm-9">
-<input type="text" class="form-control" id="cname" placeholder="Enter Company Name" name="cname"required>
-</div>
-</div>
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="address">Address:</label>
-<div class="col-sm-9">
-<input type="text" class="form-control" id="address" placeholder="Enter Your Address" name="address"required>
-</div>
-</div>
-
-
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="city">City:</label>
-<div class="col-sm-9">
-<input type="city" class="form-control" id="city" placeholder="Enter Your city" name="city"required>
-</div>
-</div>
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="state">State/Province:</label>
-<div class="col-xs-9">
-<input type="state" class="form-control" id="state" placeholder="Enter Your State/Province" name="state"required>
-</div>
-</div>
-
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="state">Country:</label>
-<div class="col-sm-9" >
-<div class="dropdown">
-<select class="form-control">
-<option selected value="country">Select Country</option>
-<option  value="AI">Anguilla</option>
-<option  value="AG">Antigua and Barbuda</option>
-<option  value="AW">Aruba</option>
-<option  value="AU">Australia</option>
-<option  value="BS">Bahamas</option>
-<option  value="BB">Barbados</option>
-<option  value="BZ">Belize</option>
-<option  value="BM">Bermuda</option>
-<option  value="BR">Brazil</option>
-<option  value="CA">Canada</option>
-<option  value="KY">Cayman Islands</option>
-<option  value="CR">Costa Rica</option>
-<option  value="CW">Curacao</option>
-<option  value="DM">Dominica</option>
-<option  value="DO">Dominican Republic</option>
-<option  value="EC">Ecuador</option>
-<option  value="SV">El Salvador</option>
-<option  value="GD">Grenada</option>
-<option  value="GU">Guam</option>
-<option  value="GT">Guatemala</option>
-<option  value="HN">Honduras</option>
-<option  value="JM">Jamaica</option>
-<option  value="MQ">Martinique</option>
-<option  value="MX">Mexico</option>
-<option  value="NI">Nicaragua</option>
-<option  value="PR">Puerto Rico</option>
-<option  value="KN">Saint Kitts and Nevis</option>
-<option  value="LC">Saint Lucia</option>
-<option  value="TT">Trinidad and Tobago</option>
-<option  value="TC">Turks and Caicos Islands</option>
-<option  value="US">United States</option>
-<option  value="VG">Virgin Islands, British</option>
-<option  value="VI">Virgin Islands, U.S.</option>
-</select>
-</div>
-</div>
-</div>
-
-
-<!--	<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="state">State:</label>
-<div class="dropdown">
-<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select State</button>
-<ul class="dropdown-menu">
-<li><a href="#">HTML</a></li>
-<li><a href="#">CSS</a></li>
-<li><a href="#">JavaScript</a></li>
-</ul>
-</div>
-</div>
--->
-
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="zip">Zip Code:</label>
-<div class="col-sm-9">
-<input type="number" class="form-control" id="zip" placeholder="Enter Zip Code" name="zip"required>
-</div>
-</div>
-
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="pnu">Phone Number:</label>
-<div class="col-sm-9">
-<input type="tell" class="form-control" id="pnu" placeholder="Enter Your Phone Number" name="pnu" pattern="^\d\d\d\d\d\d\d\d\d\d$"required>
-</div>
-</div>
-
-<div class="form-group control-label">
-<label class="control-label col-sm-2" for="cmt">Comments:</label>
-<div class="col-sm-9" >
-<input type="text-area" class="form-control" id="cmt" placeholder="Enter comment / More Information" name="cmt">
-</div>
-</div>
-<!--
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="state">Country:</label>
-<div class="col-sm-10" >
-<div class="dropdown">
-<select class="form-control">
-<option selected value="country">Select Country</option>
-<option  value="AI">Anguilla</option>
-<option  value="AG">Antigua and Barbuda</option>
-<option  value="AW">Aruba</option>
-<option  value="AU">Australia</option>
-<option  value="BS">Bahamas</option>
-<option  value="BB">Barbados</option>
-<option  value="BZ">Belize</option>
-<option  value="BM">Bermuda</option>
-<option  value="BR">Brazil</option>
-<option  value="CA">Canada</option>
-<option  value="KY">Cayman Islands</option>
-<option  value="CR">Costa Rica</option>
-<option  value="CW">Curacao</option>
-<option  value="DM">Dominica</option>
-<option  value="DO">Dominican Republic</option>
-<option  value="EC">Ecuador</option>
-<option  value="SV">El Salvador</option>
-<option  value="GD">Grenada</option>
-<option  value="GU">Guam</option>
-<option  value="GT">Guatemala</option>
-<option  value="HN">Honduras</option>
-<option  value="JM">Jamaica</option>
-<option  value="MQ">Martinique</option>
-<option  value="MX">Mexico</option>
-<option  value="NI">Nicaragua</option>
-<option  value="PR">Puerto Rico</option>
-<option  value="KN">Saint Kitts and Nevis</option>
-<option  value="LC">Saint Lucia</option>
-<option  value="TT">Trinidad and Tobago</option>
-<option  value="TC">Turks and Caicos Islands</option>
-<option  value="US">United States</option>
-<option  value="VG">Virgin Islands, British</option>
-<option  value="VI">Virgin Islands, U.S.</option>
-</select>
-</div>
-</div>
-</div>
--->
-
-<!--
-<div class="form-group required control-label">
-<label class="control-label col-sm-2" for="state">Country:</label>
-<div class="collapse navbar-collapse" id="bs-megadropdown-tabs" >
-<ul class="nav navbar-nav nav_1">
-				<li class="dropdown mega-dropdown active">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates<span class="caret"></span></a>				
-					<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-						<div class="w3ls_vegetables">
-							<ul>	
-								<li><a href="drive_way_gates.html">Drive Way Gates</a></li>
-								<li><a href="garden_gates.html">Garden Gates</a></li>
-							</ul>
-						</div>                  
-					</div>	
-</div>
-</div>
--->
-
-
-
-
-
-
-<div class="form-group">        
-<div class="col-sm-offset-2 col-sm-9">
-<div class="checkbox">
-  <label><input type="checkbox" name="remember" required> <b>Agree to the Terms of Service <b></label>
-</div>
-</div>
-</div>
-
-
-<div class="form-group">        
-<div class="col-sm-offset-2 col-sm-9">
-
-<button href ="" type="submit" class="btn btn-success btn-lg float-left">Submit</button>
-	
-			</div>
-
-</div>
-</div>
-
-
-
-
-</form>
-
-</div>	
-
-	
-
-
-
-
-<div class="clearfix"></div>
-</div>
-<!-- //banner -->
-
-<!-- //footer -->
+            <td nowrap height="97" valign="top" bgcolor="#CCCCCC">
+                <span class="text">
+                    <b><font size="4">
+                            <span style="font-size:20px;line-height:22px;">Below are Directories<br>
+                            </span>
+                        </font></b>
+                    <b>
+                        <font size="2"><span style="font-size:15px;line-height:15px;">We sell hydroponics, grow light, hydroponics system, indoor gardening, fertilizer,grow hydroponics, hydroponics supply, advanced nutrients, plant grow light, organic fertilizer, growing hydroponics, and much more.</span>
+                        </font>
+                    </td></br></br>
+            <div>
+                <table border="0" cellspacing="0" cellpadding="0" width="170">
+                    <tr>
+                      <td nowrap height="209" valign="top" bgcolor="#FFFFFF"><span class="text"><b><font color="#FF0000" size="4"><span style="font-size:18px;line-height:22px;">Important Links:<br></span></font></b><ul style="padding:0;margin:0px 0px 0px 40px;;"><li style="line-height:0px;color:#FF0000;"><a href="Important-Links/Government-links.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;">Government</span></font></b></a><a href="Important-Links/Government-links.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;"><br></span></font></b></a><li style="line-height:0px;color:#FF0000;"><a href="Important-Links/Links-Electronics-TopBrands-Samsung-GE-SONY-.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;">Top Brand Electronics</span></font></b></a><a href="Important-Links/Links-Electronics-TopBrands-Samsung-GE-SONY-.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;"><br></span></font></b></a><li style="line-height:0px;color:#FF0000;"><a href="Important-Links/Airline-TravelGuide-Airtransportation-Vacation-TicketsDeals-FrequentFlier.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;">Airlines</span></font></b></a><a href="Important-Links/Airline-TravelGuide-Airtransportation-Vacation-TicketsDeals-FrequentFlier.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;"><br></span></font></b></a><li style="line-height:0px;color:#FF0000;"><a href="Important-Links/Exotic-Cars-Luxury-Car-Dealers-Rare-Classic-Cars-Links.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;">Exotic Cars</span></font></b></a><a href="Important-Links/Exotic-Cars-Luxury-Car-Dealers-Rare-Classic-Cars-Links.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;"><br></span></font></b></a><li style="line-height:0px;color:#FF0000;"><a href="Important-Links/Links-AdvertisingCompany-InternetAdvertising-AdvertisingCompany-InternetAdvertisingOnline.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;">Advertising</span></font></b></a><a href="Important-Links/Links-AdvertisingCompany-InternetAdvertising-AdvertisingCompany-InternetAdvertisingOnline.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;"><br></span></font></b></a><li style="line-height:0px;color:#FF0000;"><a href="Important-Links/Outdoor-Lights-Lighting-Wall-Light-Post-Mount-Lights-Links.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;">Outdoor Lights</span></font></b></a><a href="Important-Links/Outdoor-Lights-Lighting-Wall-Light-Post-Mount-Lights-Links.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;"><br></span></font></b></a><li style="line-height:0px;color:#FF0000;"><a href="Important-Links/PoolSafety-Children-SwimmingPoolSafety-Drownings-Nets-DrainCovers-Prevention-Links.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;">Pool Safety</span></font></b></a><a href="Important-Links/PoolSafety-Children-SwimmingPoolSafety-Drownings-Nets-DrainCovers-Prevention-Links.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;"><br></span></font></b></a><li style="line-height:0px;color:#FF0000;"><a href="Important-Links/Top-Web-Hosting-Company-Providers-Websites-Free-Domain-Links.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;">Web Hosting</span></font></b></a><a href="Important-Links/Top-Web-Hosting-Company-Providers-Websites-Free-Domain-Links.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;"><br></span></font></b></a><li style="line-height:0px;color:#FF0000;"><a href="Important-Links/Links-Construction-Companies-General-Contractors-Building-Projects.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;">Construction</span></font></b></a><a href="Important-Links/Links-Construction-Companies-General-Contractors-Building-Projects.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;"><br></span></font></b></a><li style="line-height:0px;color:#FF0000;"><a href="Important-Links/LawInformation-StatsStateResource-Use-Tax-ConsumerReports-TravelAdvice-USCitiesCrimeEducation-Links.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;">Consumer Reports</span></font></b></a><a href="Important-Links/LawInformation-StatsStateResource-Use-Tax-ConsumerReports-TravelAdvice-USCitiesCrimeEducation-Links.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;"><br></span></font></b></a><li style="line-height:0px;color:#FF0000;"><a href="Important-Links/Hurricane-Shutters-Plantation-Rolling-Panels-Colonial-Bahama-Links.html" target="_blank"><b><font face="Arial" color="#FF0000" size="2"><span style="font-size:12px;line-height:15px;">Hurricane Shutters<br soft></span></font></b></a></ul></span></td>
+                    </tr>
+                  </table>
+            </div>
+            <div>
+                <table border="0" cellspacing="0" cellpadding="0" width="570">
+                    <tr>
+                      <td nowrap height="144" valign="top" bgcolor="#FFFFFF"><span class="text"><a href="http://www.gatesnfences.com/links/resources.html" target="_blank"><b><font color="#FF0033" size="4"><span style="font-size:18px;line-height:22px;">Link Partners:<br></span></font></b></a><b><font color="#CC0000"><span style="font-size:14px;line-height:17px;">Important Notice</span></font></b><b><font size="2"><span style="font-size:12px;line-height:15px;">: </span></font></b><b><font color="#0000FF" size="2"><span style="font-size:12px;line-height:15px;">&nbsp;Gates N Fences has added links in the above companies to enhance your <br soft>shopping experience. &nbsp;When visiting these other<br>websites, you should carefully review their privacy policies. &nbsp;We have no business affiliation with <br soft>these websites and therefore, we are not responsible for<br>their content, security, &nbsp;or privacy policies. &nbsp;In addition, we try to verify all website links but we are <br soft>under no obligation to inspect these websites and we are<br>not liable or responsible for actions, products or content relating to any of these businesses or <br soft>individuals.<br soft></span></font></b></span></td>
+                    </tr>
+                  </table>
+            </div>
+        </div>       
+<!-- footer -->
 <div class="footer">
 	<div class="container" style="color: white;">
 			<div class="clearfix"> </div>
 		</div>
 	</div>
 </div>
+<!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script>

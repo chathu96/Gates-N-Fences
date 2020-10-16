@@ -65,16 +65,8 @@ author: jayaprada A.B.C
 </head>
 
 <body style="background-color: rgb(239, 222, 241);">
-	<div id="floater" class="product_list_header agileits_header hidden" >
-		<form action="#" method="post" class="last">
-			<fieldset>
-				<input type="hidden" name="cmd" value="_cart">
-				<input type="hidden" name="display" value="1">
-				<input type="submit" name="submit" value="View your cart" class="button btn button--round-l">
-			</fieldset>
-		</form>
-	</div>
-	<script>
+	
+	<!-- <script>
 		$(window).scroll(function() {
     var winScrollTop = $(window).scrollTop();
     var winHeight = $(window).height();
@@ -83,30 +75,12 @@ author: jayaprada A.B.C
     var top = winScrollTop + winHeight - floaterHeight - fromBottom;
 	$('#floater').css({'top': top + 'px'});
 });
-	</script>
+	</script> -->
 	
 <!-- header -->
 	<div style="background-color: purple;height: 40px;">
 		
 	</div>
-	
-<!-- script-for sticky-nav -->
-	<!-- <script>
-	$(document).ready(function() {
-		 var navoffeset=$(".product_list_header").offset().top;
-		 $(window).scroll(function(){
-			var scrollpos=$(window).scrollTop();
-			if(scrollpos >=navoffeset){
-				// $(".product_list_header").addClass("cartfixed");
-				// $(".product_list_header").addClass("agileits_header");
-			}else{
-				// $(".product_list_header").removeClass("cartfixed");
-				// $(".product_list_header").removeClass("agileits_header");
-			}
-		 });
-
-	});
-	</script> -->
 
 	<div class="logo_products">
 		<div class="container" style="width: 320px;
@@ -128,7 +102,7 @@ author: jayaprada A.B.C
 
 	<div class="products-breadcrumb" >
 		<div class="container"style="margin-right: -5px;">
-			<ul >
+			<ul id="content-desktop">
 				<li><i class="fa fa-home" aria-hidden="true" style="color: white;"></i><a href="index.html">Home</a><span>|</span></li>
 				<li><i></i><a href="about.html">About Us</a><span>|</span></li>
 				
@@ -136,7 +110,7 @@ author: jayaprada A.B.C
 				<li><i class="fa fa-gavel" aria-hidden="true" style="color: white;"></i><a href="policy.html">Policies</a><span>|</span></li>
 				<li><i ></i><a href="faq.html">FAQ</a><span>|</span></li>
 				<li><i ></i><a href="">Manufactures</a><span>|</span></li>
-				<li><i ></i><a href="">Links</a><span>|</span></li>
+				<li><i ></i><a href="link.html">Links</a><span>|</span></li>
 			</ul>
 		</div>
 	</div>
@@ -219,8 +193,27 @@ author: jayaprada A.B.C
 								</div>                  
 							</div>				
 						</li>
-						
-						<li><a href="">Control Board</a></li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Fencing<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+										<li><a href="outdoor_fences.html">Outdoor Fences</a></li>
+										<li><a href="indoor_fences.html">Indoor Fences</a></li>
+									</ul>
+								</div>                  
+							</div>				
+							</li>
+							<li class="dropdown mega-dropdown active">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Control Boards<span class="caret"></span></a>				
+								<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+									<div class="w3ls_vegetables">
+										<ul>	
+											<li><a href="control_board.html">Main Control Boards</a></li>
+										</ul>
+									</div>                  
+								</div>				
+								</li>
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
@@ -510,7 +503,7 @@ author: jayaprada A.B.C
 <!-- //top-brands -->
 <!-- footer -->
 <div class="footer">
-	<div class="container" style="color: white;">
+	<div class="container" id="content-desktop" style="color: white;">
 			<div class="clearfix"> </div>
 			<a href="dealersApplication.html"><button class="button button1">Dealer Application</button></a>
 		</div>

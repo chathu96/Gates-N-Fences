@@ -45,24 +45,35 @@ author: Diyunuge K.D.C.D.R
 
 <body style="background-color: rgb(239, 222, 241);">
 <!-- header -->
+	<div class="product_list_header agileits_header" >
+		<form action="#" method="post" class="last">
+			<fieldset>
+				<input type="hidden" name="cmd" value="_cart">
+				<input type="hidden" name="display" value="1">
+				<input type="submit" name="submit" value="View your cart" class="button btn button--round-l">
+			</fieldset>
+		</form>
+	</div>
 	<div style="background-color: purple;height: 40px;">
 		
 	</div>
 <!-- script-for sticky-nav -->
-	<script>
+	<!-- <script>
 	$(document).ready(function() {
-		 var navoffeset=$(".agileits_header").offset().top;
+		 var navoffeset=$(".product_list_header").offset().top;
 		 $(window).scroll(function(){
 			var scrollpos=$(window).scrollTop();
 			if(scrollpos >=navoffeset){
-				$(".agileits_header").addClass("fixed");
+				// $(".product_list_header").addClass("cartfixed");
+				// $(".product_list_header").addClass("agileits_header");
 			}else{
-				$(".agileits_header").removeClass("fixed");
+				// $(".product_list_header").removeClass("cartfixed");
+				// $(".product_list_header").removeClass("agileits_header");
 			}
 		 });
 
 	});
-	</script>
+	</script> -->
 
 	<div class="logo_products">
 		<div class="container" style="width: 320px;
@@ -88,151 +99,155 @@ author: Diyunuge K.D.C.D.R
 			</ul>
 		</div>
 	</div>
-<!-- banner -->
-	<div class="banner">
-		<div class="w3l_banner_nav_left">
-			<nav class="navbar nav_bottom">
-			 <!-- Brand and toggle get grouped for better mobile display -->
-			  <div class="navbar-header nav_2">
-				  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-			   </div> 
-			   <!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs" >
-					<ul class="nav navbar-nav nav_1">
-						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates<span class="caret"></span></a>				
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>	
-										<li><a href="drive_way_gates.html">Drive Way Gates</a></li>
-										<li><a href="garden_gates.html">Garden Gates</a></li>
-									</ul>
-								</div>                  
-							</div>				
-						</li>
-						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Openers<span class="caret"></span></a>				
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>	
-										<li><a href="Openers.html#ramset">Ramset</a></li>
-										<li><a href="Openers.html#faac">FAAC</a></li>
-										<li><a href="Openers.html#apollo">Apollo</a></li>
-										<li><a href="Openers.html#bft">BFT</a></li>
-										<li><a href="Openers.html#pm">Power Master</a></li>
-									</ul>
-								</div>                  
-							</div>				
-						</li>
-						<li><a href="">Fencing</a></li>
-							<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Railling<span class="caret"></span></a>				
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>	
-										<li><a href="odern_balcony_railing.html">Modern Balcony Railling</a></li>
-									</ul>
-								</div>                  
-							</div>				
-						</li>
-						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Telephone Entry<span class="caret"></span></a>
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>
-										<li><a href="tpEntry.html#lift_master">Chamberlain</a></li>
-										<li><a href="tpEntry.html#aas">American Access Systms</a></li>
-									</ul>
-								</div>
-							</div>
-						</li>
-						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Safety Equipments<span class="caret"></span></a>				
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>	
-										<li><a href="safety_loops.html">Safety Loops</a></li>
-										<li><a href="loop_detector.html">Loop Detector</a></li>
-										<li><a href="safety_photo.html">Safety Photo Cell</a></li>
-										
-									</ul>
-								</div>                  
-							</div>				
-						</li>
-						<li><a href="">Control Board</a></li>
-						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>				
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>	
-										<li><a href="linear.html">Linear/Multi_code</a></li>
-										<li><a href="dearking.html">Dearking</a></li>
-										<li><a href="lift_master.html">Lift Master</a></li>
-										<li><a href="key_stone.html">Key Stone</a></li>
-										<li><a href="long_range.html">Long Range</a></li>
-									</ul>
-								</div>                  
-							</div>				
-						</li>
-						
-						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Remote Controls<span class="caret"></span></a>				
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>	
-										<li><a href="">Multi_code</a></li>
-										<li><a href="">Transmittor Solution</a></li>
-										<li><a href="">Linear</a></li>
-										<li><a href="">Dearking</a></li>
-										<li><a href="">BFT.SEA.FAAC</a></li>
-										<li><a href="">long range</a></li>
-							<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>				
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>	
-										<li><a href="linear.html">Linear/Multi_code</a></li>
-										<li><a href="dearking.html">Dearking</a></li>
-										<li><a href="lift_master.html">Lift Master</a></li>
-										<li><a href="key_stone.html">Key Stone</a></li>
-										<li><a href="long_range.html">Long Range</a></li>
-									</ul>
-								</div>                  
-							</div>				
-						</li>
-									</ul>
-								</div>                  
-							</div>				
-						</li>
-						<li class="dropdown mega-dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates Accesories<span class="caret"></span></a>				
-							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
-								<div class="w3ls_vegetables">
-									<ul>	
-				
 
-										<li><a href="cantileverwheel.html">Cantilever Wheels</a></li>
-										<li><a href="vtrack.html">VTrack-Guide-Vwheels</a></li>
-										<li><a href="hingers.html">Hingers</a></li>
-										<li><a href="latch.html">Locks-Latches</a></li>
-						
+<!-- banner -->
+<div class="banner">
+	<div class="w3l_banner_nav_left">
+		<nav class="navbar nav_bottom">
+		 <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header nav_2">
+			  <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+		   </div>
+		   <!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-megadropdown-tabs" >
+				<ul class="nav navbar-nav nav_1">
+					<li class="dropdown mega-dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gates<span class="caret"></span></a>
+						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu" >
+							<div class="w3ls_vegetables">
+								<ul>
+									<li><a href="drive_way_gates.html">Drive Way Gates</a></li>
+									<li><a href="garden_gates.html">Garden Gates</a></li>
+									
 								</ul>
 							</div>
-						  </div>
-						
-						</li>	
-						
-					</ul>
-				 </div><!-- /.navbar-collapse -->
-			</nav>
-		</div>
-		
-	<!--Safety Photo Cell Page -->
+						</div>
+					</li>
+					<li class="dropdown mega-dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Openers<span class="caret"></span></a>
+						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+							<div class="w3ls_vegetables">
+								<ul>
+									<li><a href="Openers.html#ramset">Ramset</a></li>
+									<li><a href="Openers.html#faac">FAAC</a></li>
+									<li><a href="Openers.html#apollo">Apollo</a></li>
+									<li><a href="Openers.html#bft">BFT</a></li>
+									<li><a href="Openers.html#pm">Power Master</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					
+						<li class="dropdown mega-dropdown active">
+
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Railling<span class="caret"></span></a>
+						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+							<div class="w3ls_vegetables">
+								<ul>	
+									<li><a href="odern_balcony_railing.html">Modern Balcony Railing</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown mega-dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Telephone Entry<span class="caret"></span></a>
+						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+							<div class="w3ls_vegetables">
+								<ul>
+									<li><a href="tpEntry.html#lift_master">Chamberlain</a></li>
+									<li><a href="tpEntry.html#aas">American Access Systms</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown mega-dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Safety Equipments<span class="caret"></span></a>				
+						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+							<div class="w3ls_vegetables">
+								<ul>	
+									<li><a href="safety_loops.html">Safety Loops</a></li>
+									<li><a href="loop_detector.html">Loop Detector</a></li>
+									<li><a href="safety_photo.html">Safety Photo Cell</a></li>
+									
+								</ul>
+							</div>                  
+						</div>				
+					</li>
+					<li class="dropdown mega-dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Fencing<span class="caret"></span></a>				
+						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+							<div class="w3ls_vegetables">
+								<ul>	
+									<li><a href="outdoor_fences.html">Outdoor Fences</a></li>
+									<li><a href="indoor_fences.html">Indoor Fences</a></li>
+								</ul>
+							</div>                  
+						</div>				
+						</li>
+						<li class="dropdown mega-dropdown active">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Control Boards<span class="caret"></span></a>				
+							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+								<div class="w3ls_vegetables">
+									<ul>	
+										<li><a href="control_board.html">Main Control Boards</a></li>
+									</ul>
+								</div>                  
+							</div>				
+							</li>
+					<li class="dropdown mega-dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>
+						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+							<div class="w3ls_vegetables">
+								<ul>
+									<li><a href="linear.html">Linear/Multi_code</a></li>
+									<li><a href="dearking.html">Dearking</a></li>
+									<li><a href="lift_master.html">Lift Master</a></li>
+									<li><a href="key_stone.html">Key Stone</a></li>
+									<li><a href="long_range.html">Long Range</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li class="dropdown mega-dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Remote Controls<span class="caret"></span></a>
+						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+							<div class="w3ls_vegetables">
+								<ul>
+								<li><a href="multi_code.html">Multi_code</a></li>
+									<li><a href="transmitter_solutions.html">Transmittor Solution</a></li>
+									<li><a href="linear_remote.html">Linear Rz</a></li>
+									<li><a href="liftmaster.html">Liftmaster</a></li>
+									<li><a href="doorking.html">Doorking</a></li>
+									<li><a href="keystone_heddolf.html">Keystone</a></li>
+									<li><a href="bft_sea_faac.html">BFT.SEA.FAAC</a></li>
+									<li><a href="longrange.html">long range</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+							
+					<li class="dropdown mega-dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gate Accessories<span class="caret"></span></a>				
+						<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
+							<div class="w3ls_vegetables">
+								<ul>	
+						<li><a href="cantileverwheel.html">Cantilever Wheels</a></li>
+						<li><a href="vtrack.html">VTrack-Guide-Vwheels</a></li>
+						<li><a href="hingers.html">Hingers</a></li>
+						<li><a href="latch.html">Locks-Latches</a></li>
+					  </div>
+					  </div>
+					</li>
+				</ul>
+			 </div><!-- /.navbar-collapse -->
+		</nav>
+	</div>
 <script>
 function showText(text){
     document.getElementById("text").innerHTML=text;
@@ -258,7 +273,7 @@ function hide(){
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img2.jpg" alt=" " class="img-responsive" /></a>
+											<a href="safety_photo.html"><img src="it16076594img/safetyphoto/img2.jpg" alt=" " class="img-responsive" /></a>
 											<p>EMX Mini Infra-Red Eye BP 10 12V</p>
 											<h4><center>$150.00</center></h4>
 										</div>
@@ -294,7 +309,7 @@ function hide(){
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img2.jpg" alt=" " class="img-responsive" /></a>
+											<a href="safety_photo.html"><img src="it16076594img/safetyphoto/img2.jpg" alt=" " class="img-responsive" /></a>
 											<p>EMX Mini Infra-Red Eye BP 10 24V</p>
 											<h4><center>$150.00</center></h4>
 										</div>
@@ -330,7 +345,7 @@ function hide(){
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img4.png" alt=" " class="img-responsive" /></a>
+											<a href="safety_photo.html"><img src="it16076594img/safetyphoto/img4.png" alt=" " class="img-responsive" /></a>
 											<p>EMX IRB-EXP Infrared Explosive Env photoswitch</p>
 											<h4><center>$350.00</center> </h4>
 										</div>
@@ -366,7 +381,7 @@ function hide(){
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img3.jpg" alt=" " class="img-responsive" > </a>
+											<a href="safety_photo.html"><img src="it16076594img/safetyphoto/img3.jpg" alt=" " class="img-responsive" > </a>
 											
 										<p>EMX Photo Electric Sensors - P41 full kit </p>
 										
@@ -421,7 +436,7 @@ function hide(){
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img4.jpg" alt=" " class="img-responsive" /></a>
+											<a href="safety_photo.html"><img src="it16076594img/safetyphoto/img4.jpg" alt=" " class="img-responsive" /></a>
 										
 											<p>EMX Retro-Reflective Photoeye NIRPlus -Full Kit</p>
 											
@@ -460,7 +475,7 @@ function hide(){
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img5.jpg" alt=" " class="img-responsive" /></a>
+											<a href="safety_photo.html"><img src="it16076594img/safetyphoto/img5.jpg" alt=" " class="img-responsive" /></a>
 											<p>EMX Steel Protective Hood for NIR</p>
 											<h4><center>$24.00</center></h4>
 										</div>
@@ -496,7 +511,7 @@ function hide(){
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img6.jpg" alt=" " class="img-responsive" /></a>
+											<a href="safety_photo.html"><img src="it16076594img/safetyphoto/img6.jpg" alt=" " class="img-responsive" /></a>
 											<p>EMX Optional 3” round reflector </p>
 											<h4><center>$19.00</center> </h4>
 											
@@ -533,7 +548,7 @@ function hide(){
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img7.jpg" alt=" " class="img-responsive" /></a>
+											<a href="safety_photo.html"><img src="it16076594img/safetyphoto/img7.jpg" alt=" " class="img-responsive" /></a>
 											<p>EMX Gray Protective Hood for Reflector </p>
 											<h4><center>$28.00</center></h4>
 										</div>
@@ -581,7 +596,7 @@ function hide(){
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img1.jpg" alt=" " class="img-responsive" /></a>
+											<a href="safety_photo.html"><img src="it16076594img/safetyphoto/img1.jpg" alt=" " class="img-responsive" /></a>
 										
 											<p>EMX IRB-325 Infrared Photoeye Safety Sensors</p>
 											
@@ -620,7 +635,7 @@ function hide(){
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img9.jpg" alt=" " class="img-responsive" /></a>
+											<a href="safety_photo.html"><img src="it16076594img/safetyphoto/img9.jpg" alt=" " class="img-responsive" /></a>
 											<p>
 EMX P63 Infrared Photoeye</p></br>
 											<h4><center>$69.00</center></h4>
@@ -657,7 +672,7 @@ EMX P63 Infrared Photoeye</p></br>
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img8.jpg" alt=" " class="img-responsive" /></a>
+											<a href="safety_photo.html"><img src="it16076594img/safetyphoto/img8.jpg" alt=" " class="img-responsive" /></a>
 											<p>EMX Infrared Modulated Photocell IRB-4X </p>
 											<h4><center>$243.00</center> </h4>
 											
@@ -694,7 +709,7 @@ EMX P63 Infrared Photoeye</p></br>
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="it16076594img/safetyphoto/img111.jpg" alt=" " class="img-responsive" /></a>
+											<a href="safety_photo.html"><img src="it16076594img/safetyphoto/img111.jpg" alt=" " class="img-responsive" /></a>
 											<p>Omron Safety Photo Cell with Unit
 Reflector
 Sensors </p>
