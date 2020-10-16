@@ -22,7 +22,7 @@ author: Diyunuge K.D.C.D.R
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //font-awesome icons -->
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
@@ -34,7 +34,7 @@ author: Diyunuge K.D.C.D.R
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		$(".scroll").click(function(event){
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
@@ -42,87 +42,52 @@ author: Diyunuge K.D.C.D.R
 </script>
 <!-- start-smoth-scrolling -->
 </head>
-	
-<body>
+
+<body style="background-color: rgb(239, 222, 241);">
 <!-- header -->
-	<div class="agileits_header">
-		<div class="w3l_offers">
-			<a href="products.html">Today's special Offers !</a>
-		</div>
-		<div class="w3l_search">
-			<form action="#" method="post">
-				<input type="text" name="Product" value="Search a product..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search a product...';}" required="">
-				<input type="submit" value=" ">
-			</form>
-		</div>
-		<div class="product_list_header">  
-			<form action="#" method="post" class="last">
-                <fieldset>
-                    <input type="hidden" name="cmd" value="_cart" />
-                    <input type="hidden" name="display" value="1" />
-                    <input type="submit" name="submit" value="View your cart" class="button" />
-                </fieldset>
-            </form>
-		</div>
+	<div style="background-color: purple;height: 40px;">
+		
 	</div>
 <!-- script-for sticky-nav -->
-	<script>	
+	<script>
 	$(document).ready(function() {
 		 var navoffeset=$(".agileits_header").offset().top;
 		 $(window).scroll(function(){
-			var scrollpos=$(window).scrollTop(); 
+			var scrollpos=$(window).scrollTop();
 			if(scrollpos >=navoffeset){
 				$(".agileits_header").addClass("fixed");
 			}else{
 				$(".agileits_header").removeClass("fixed");
 			}
 		 });
-		 
+
 	});
 	</script>
-<!-- //script-for sticky-nav -->
+
 	<div class="logo_products">
-		<div class="container">
-			<div class="col-md-4 logo_agile">
+		<div class="container" style="width: 320px;
+		padding: 10px;
+		border: 5px solid gray;
+		">
+			<div class="col-md-4 logo_agile" style="background-color:#a23dbb;padding: 2	0px;">
 				<h1>
-					<a href="index.html">
-						<!--<span>G</span>rocery
-						<span>S</span>hoppy-->
-						<img src="Gates/Logo.png" alt=" " style="height: 140px;width: 140px;">
+					<a href="index.html" >
+						<img src="Gates/Logo.png" alt=" " 
+						style="height: 140px;width: 140px;position: left;margin-left: -80px;margin-top: -70px;margin-bottom: 2px;">
 					</a>
 				</h1>
-			</div>
-			
-			<div class="w3ls_logo_products_left1">
-				<ul class="special_items">
-					<li><a href="about.html" aria-hidden="true" style="position: right;">About Us</a><i>/</i></li>
-					<li><a href="about.html" aria-hidden="true">Contact Us</a><i>/</i></li>
-					<li><a href="products.html" aria-hidden="true">Policies</a><i>/</i></li>
-					<li><a href="services.html" aria-hidden="true">FAQ</a></li>
-					<li><a href="manufacture.html" aria-hidden="true">Manufactures</a><i>/</i></li>
-					<li><a href="link.html"aria-hidden="true"> Link</a></li>
-				</ul>
-			</div>
-			<div class="w3ls_logo_products_left1">
-				<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i>(+0123) 234 567</li>
-					<li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto: LAOrnamental@Aol.com"> laornamental@aol.com</a></li>
-				</ul>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-<!-- //header -->
-<!-- products-breadcrumb -->
 	<div class="products-breadcrumb">
 		<div class="container">
 			<ul>
 				<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
-				<li>Safety Loops</li>
+				<li style="color: white;">Safety Loops</li>
 			</ul>
 		</div>
 	</div>
-<!-- //header -->
 <!-- banner -->
 	<div class="banner">
 		<div class="w3l_banner_nav_left">
@@ -170,7 +135,7 @@ author: Diyunuge K.D.C.D.R
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>	
-										<li><a href="railling.html">Modern Balcony Railling</a></li>
+										<li><a href="odern_balcony_railing.html">Modern Balcony Railling</a></li>
 									</ul>
 								</div>                  
 							</div>				
@@ -186,7 +151,6 @@ author: Diyunuge K.D.C.D.R
 								</div>
 							</div>
 						</li>
-					
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Safety Equipments<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
@@ -200,14 +164,6 @@ author: Diyunuge K.D.C.D.R
 								</div>                  
 							</div>				
 						</li>
-						
-						
-						
-						
-						
-						
-						
-						
 						<li><a href="">Control Board</a></li>
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Receivers<span class="caret"></span></a>				
@@ -264,15 +220,18 @@ author: Diyunuge K.D.C.D.R
 										<li><a href="vtrack.html">VTrack-Guide-Vwheels</a></li>
 										<li><a href="hingers.html">Hingers</a></li>
 										<li><a href="latch.html">Locks-Latches</a></li>
-									</ul>
-								</div>
+						
+								</ul>
 							</div>
-							
-							</li>
+						  </div>
+						
+						</li>	
+						
 					</ul>
 				 </div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
+		
 	<!--safety Loops Page -->	
 		<div class="w3l_banner_nav_right">
 			<div class="w3ls_w3l_banner_nav_right_grid">
@@ -760,32 +719,18 @@ for 300 Feet</p>
 			
 		</div>
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	
 		<div class="clearfix"></div>
 	</div>
-<!-- footer -->
+<!-- //footer -->
 <div class="footer">
 	<div class="container" style="color: white;">
 			<div class="clearfix"> </div>
 		</div>
 	</div>
 </div>
-<!-- //footer -->
+
+
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 <script>
