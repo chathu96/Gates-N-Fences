@@ -258,6 +258,7 @@ label.validation-error{
 				 </div><!-- /.navbar-collapse -->
 			</nav>
 		</div>
+			<div class="w3ls_w3l_banner_nav_right_grid">
 		<div class="w3l_banner_nav_right">
 					<div class="privacy about"> 
 				<h3>Contact Us</h3>
@@ -267,30 +268,31 @@ label.validation-error{
 							<form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
 								<div>
 									<label>First Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
-									<input type="text" name="fullName" id="fullName">
+									<input type="text" name="fullName" id="fullName"  placeholder="Enter Full Name" required>
 								</div>
 								<div>
 									<label>Street Address</label>
-									<input type="text" name="address" id="address">
+									<input type="text" name="address" id="address" placeholder="Enter Street Address" required>
 								</div>
 								<div>
 									<label>City</label>
-									<input type="text" name="city" id="city">
+									<input type="text" name="city" id="city" placeholder="Enter City" required>
 								</div>
 								<div>
 									<label>State</label>
-									<input type="text" name="state" id="state">
+									<input type="text" name="state" id="state" placeholder="Enter State" required>
 								</div>
 								<div>
-									<label>Zip Code*</label><label class="validation-error hide"id="zipcodeErr">This field is required.</label>
-									<input type="text" name="zipcode"id="zipcode">
+									<label>Zip Code</label><label class="validation-error hide"id="zipcodeErr">This field is required.</label>
+									<input type="text" name="zipcode"id="zipcode" placeholder="Enter Zip Code" required>
 								</div>
 								<div>
 									<label>Email Address</label>
-									<input type="text" name="email" id="email">
+									<input type="text" name="email" id="email"placeholder="Enter Email Address"required>
 								</div>
 								<div>
-									<textarea rows="5" cols="20" name="quotation" id="quotation" form="usrform">Get Quotation</textarea>
+									<label>Enter Quotation Details</label><br></br>
+									<textarea rows="5" cols="35" name="quotation" id="quotation" form="usrform" placeholder="Enter Quotation Details"></textarea>
 								</div>
 								<div  class="form-action-buttons">
 									<input type="submit" value="Submit" style="background-color: rgb(45, 207, 45);border: #000;">
