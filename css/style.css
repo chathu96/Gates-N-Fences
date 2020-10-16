@@ -482,7 +482,7 @@ ul.dropdown-menu.drp-mnu li a i {
 	display: block;
     font-weight: 200;
     line-height: 1.5em;
-    color:;
+    
 }
 /*-- //banner_bottom --*/
 /*-- top-brands --*/
@@ -4845,4 +4845,13 @@ input.checkbox:checked:after {
 .error {
 	color: #ff0000;
   
+  }
+  #content-desktop {display: inherit;}
+  #content-mobile {display: none;}
+
+  @media screen and (max-width: 768px) {
+
+  #content-desktop {display: none;}
+  #content-mobile {display: inherit;}
+
   }
