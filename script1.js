@@ -24,7 +24,7 @@ function readFormData() {
 }
 
 function insertNewRecord(data) {
-    var table = document.getElementById("employeeList").getElementsByTagName('tbody')[0];
+    var table = document.getElementById("contactList").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
     cell1 = newRow.insertCell(0);
     cell1.innerHTML = data.fullName;
@@ -41,36 +41,45 @@ function insertNewRecord(data) {
     cell4 = newRow.insertCell(6);
     cell4.innerHTML = data.quotation;
     cell4 = newRow.insertCell(7);
-    cell4.innerHTML = `<a onClick="onEdit(this)" >Edit</a>
+    cell4.innerHTML = `<a onClick="onEdit(this)">Edit</a>
                        <a onClick="onDelete(this)">Delete</a>`;
 }
 
 function resetForm() {
     document.getElementById("fullName").value = "";
-    document.getElementById("empCode").value = "";
-    document.getElementById("salary").value = "";
+    document.getElementById("address").value = "";
     document.getElementById("city").value = "";
+    document.getElementById("state").value = "";
+    document.getElementById("zipcode").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("quotation").value = "";
     selectedRow = null;
 }
 
 function onEdit(td) {
     selectedRow = td.parentElement.parentElement;
     document.getElementById("fullName").value = selectedRow.cells[0].innerHTML;
-    document.getElementById("empCode").value = selectedRow.cells[1].innerHTML;
-    document.getElementById("salary").value = selectedRow.cells[2].innerHTML;
-    document.getElementById("city").value = selectedRow.cells[3].innerHTML;
+    document.getElementById("address").value = selectedRow.cells[1].innerHTML;
+    document.getElementById("city").value = selectedRow.cells[2].innerHTML;
+    document.getElementById("state").value = selectedRow.cells[3].innerHTML;
+    document.getElementById("zipcode").value = selectedRow.cells[4].innerHTML;
+    document.getElementById("email").value = selectedRow.cells[5].innerHTML;
+    document.getElementById("quotation").value = selectedRow.cells[6].innerHTML;
 }
 function updateRecord(formData) {
     selectedRow.cells[0].innerHTML = formData.fullName;
-    selectedRow.cells[1].innerHTML = formData.empCode;
-    selectedRow.cells[2].innerHTML = formData.salary;
-    selectedRow.cells[3].innerHTML = formData.city;
+    selectedRow.cells[1].innerHTML = formData.address;
+    selectedRow.cells[2].innerHTML = formData.city;
+    selectedRow.cells[3].innerHTML = formData.state;
+    selectedRow.cells[4].innerHTML = formData.zipcode;
+    selectedRow.cells[5].innerHTML = formData.email;
+    selectedRow.cells[6].innerHTML = formData.quotation;
 }
 
 function onDelete(td) {
     if (confirm('Are you sure to delete this record ?')) {
         row = td.parentElement.parentElement;
-        document.getElementById("employeeList").deleteRow(row.rowIndex);
+        document.getElementById("contactList").deleteRow(row.rowIndex);
         resetForm();
     }
 }zipcode
