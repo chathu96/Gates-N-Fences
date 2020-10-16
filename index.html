@@ -44,25 +44,48 @@ author: jayaprada A.B.C
 </head>
 
 <body style="background-color: rgb(239, 222, 241);">
+	<div id="floater" class="product_list_header agileits_header hidden" >
+		<form action="#" method="post" class="last">
+			<fieldset>
+				<input type="hidden" name="cmd" value="_cart">
+				<input type="hidden" name="display" value="1">
+				<input type="submit" name="submit" value="View your cart" class="button btn button--round-l">
+			</fieldset>
+		</form>
+	</div>
+	<script>
+		$(window).scroll(function() {
+    var winScrollTop = $(window).scrollTop();
+    var winHeight = $(window).height();
+    var floaterHeight = $('#floater').outerHeight(true);
+    var fromBottom = 500;
+    var top = winScrollTop + winHeight - floaterHeight - fromBottom;
+	$('#floater').css({'top': top + 'px'});
+});
+	</script>
+	
 <!-- header -->
-	<div class="agileits_header" style="background-color: purple;height: 40px;">
+	<div style="background-color: purple;height: 40px;">
 		
 	</div>
+	
 <!-- script-for sticky-nav -->
-	<script>
+	<!-- <script>
 	$(document).ready(function() {
-		 var navoffeset=$(".agileits_header").offset().top;
+		 var navoffeset=$(".product_list_header").offset().top;
 		 $(window).scroll(function(){
 			var scrollpos=$(window).scrollTop();
 			if(scrollpos >=navoffeset){
-				$(".agileits_header").addClass("fixed");
+				// $(".product_list_header").addClass("cartfixed");
+				// $(".product_list_header").addClass("agileits_header");
 			}else{
-				$(".agileits_header").removeClass("fixed");
+				// $(".product_list_header").removeClass("cartfixed");
+				// $(".product_list_header").removeClass("agileits_header");
 			}
 		 });
 
 	});
-	</script>
+	</script> -->
 
 	<div class="logo_products">
 		<div class="container" style="width: 320px;
