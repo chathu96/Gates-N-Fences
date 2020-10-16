@@ -108,20 +108,14 @@ author: jayaprada A.B.C
 	</div>
 <!-- //header -->
 
-	<div class="products-breadcrumb" >
-		<div class="container"style="margin-right: -5px;">
-			<ul >
-				<li><i class="fa fa-home" aria-hidden="true" style="color: white;"></i><a href="index.html">Home</a><span>|</span></li>
-				<li><i></i><a href="about.html">About Us</a><span>|</span></li>
-				
-				<li><i class="fa fa-phone"aria-hidden="true" style="color: white;"></i><a href="contact_us.html">Contact Us</a><span>|</span></li>
-				<li><i class="fa fa-gavel" aria-hidden="true" style="color: white;"></i><a href="policy.html">Policies</a><span>|</span></li>
-				<li><i ></i><a href="faq.html">FAQ</a><span>|</span></li>
-				<li><i ></i><a href="">Manufactures</a><span>|</span></li>
-				<li><i ></i><a href="">Links</a><span>|</span></li>
-			</ul>
-		</div>
+<div class="products-breadcrumb">
+	<div class="container">
+		<ul>
+			<li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html">Home</a><span>|</span></li>
+			<li style="color: white;">Checkout</li>
+		</ul>
 	</div>
+</div>
 
 <!-- banner -->
 <div class="banner">
@@ -272,8 +266,8 @@ author: jayaprada A.B.C
 		</nav>
 	</div>
 		<div class="w3l_banner_nav_right">
-<!-- about -->
-		<div class="privacy about">
+<!-- checkouts -->
+		<div class="privacy about" style="background-color: white;">
 			<h3>Check<span>out</span></h3>
 
 	      <div class="checkout-right">
@@ -370,7 +364,11 @@ author: jayaprada A.B.C
 						<li>Total <i>-</i> <span>$3,785</span></li>
 					</ul>
 				</div>
-				<div class="col-md-8 address_form_agile">
+
+				<div class="checkout-right-basket">
+					<a href="Bill_Information.html">Make a Payment <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+			  </div>
+				<div class="col-md-8 address_form_agile hidden">
 					  <h4>Purchaser Information</h4>
 				<form name="purchaser" action="payment.html" method="post" class="creditly-card-form agileinfo_form">
 									<section class="creditly-wrapper wthree, w3_agileits_wrapper">
@@ -414,7 +412,7 @@ author: jayaprada A.B.C
 									</section>
 								</form>
 									<div class="checkout-right-basket">
-				        	<!-- <a href="#">Make a Payment <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a> -->
+				        	<a href="#">Make a Payment <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
 			      	</div>
 					</div>
 
@@ -423,9 +421,11 @@ author: jayaprada A.B.C
 			</div>
 
 		</div>
-<!-- //about -->
+<!-- //checkout -->
 		</div>
+		
 		<div class="clearfix"></div>
+		
 	</div>
 <!-- //banner -->
 
@@ -490,7 +490,6 @@ author: jayaprada A.B.C
 				$(".agileits_header").removeClass("fixed");
 			}
 		 });
-
 	});
 	</script> -->
 <!-- //script-for sticky-nav -->
@@ -565,42 +564,42 @@ $(document).ready(function(){
 	<script>
 	// Wait for the DOM to be ready
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-	$("form[name='purchaser']").validate({
-			// Specify validation rules
-			rules: {
-					// The key name on the left side is the name attribute
-					// of an input field. Validation rules are defined
-					// on the right side
-					name: "required",
-					mobile: {
-						required: true,
-						phoneUS: true
-					},
-					address: "required",
-					city : "required"
+// 	$("form[name='purchaser']").validate({
+// 			// Specify validation rules
+// 			rules: {
+// 					// The key name on the left side is the name attribute
+// 					// of an input field. Validation rules are defined
+// 					// on the right side
+// 					name: "required",
+// 					mobile: {
+// 						required: true,
+// 						phoneUS: true
+// 					},
+// 					address: "required",
+// 					city : "required"
 
-			},
-			// Specify validation error messages
-			messages: {
-					name: "Please enter your Full Name",
+// 			},
+// 			// Specify validation error messages
+// 			messages: {
+// 					name: "Please enter your Full Name",
 
-					mobile: {
-							required: "Please provide a mobile number",
-							phoneUS: "The number you passed is not a valid US phone number"
-					},
-					address: "Please enter your address",
-					city: "Please provide a city"
-			},
-			// Make sure the form is submitted to the destination defined
-			// in the "action" attribute of the form when valid
-			submitHandler: function(form) {
-					form.submit();
-			}
-	});
-});
-	</script>
+// 					mobile: {
+// 							required: "Please provide a mobile number",
+// 							phoneUS: "The number you passed is not a valid US phone number"
+// 					},
+// 					address: "Please enter your address",
+// 					city: "Please provide a city"
+// 			},
+// 			// Make sure the form is submitted to the destination defined
+// 			// in the "action" attribute of the form when valid
+// 			submitHandler: function(form) {
+// 					form.submit();
+// 			}
+// 	});
+// });
+// 	</script>
 
 
 </body>
