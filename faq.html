@@ -45,24 +45,35 @@ author: jayaprada A.B.C
 
 <body style="background-color: rgb(239, 222, 241);">
 <!-- header -->
+	<div class="product_list_header agileits_header" >
+		<form action="#" method="post" class="last">
+			<fieldset>
+				<input type="hidden" name="cmd" value="_cart">
+				<input type="hidden" name="display" value="1">
+				<input type="submit" name="submit" value="View your cart" class="button btn button--round-l">
+			</fieldset>
+		</form>
+	</div>
 	<div style="background-color: purple;height: 40px;">
 		
 	</div>
 <!-- script-for sticky-nav -->
-	<script>
+	<!-- <script>
 	$(document).ready(function() {
-		 var navoffeset=$(".agileits_header").offset().top;
+		 var navoffeset=$(".product_list_header").offset().top;
 		 $(window).scroll(function(){
 			var scrollpos=$(window).scrollTop();
 			if(scrollpos >=navoffeset){
-				$(".agileits_header").addClass("fixed");
+				// $(".product_list_header").addClass("cartfixed");
+				// $(".product_list_header").addClass("agileits_header");
 			}else{
-				$(".agileits_header").removeClass("fixed");
+				// $(".product_list_header").removeClass("cartfixed");
+				// $(".product_list_header").removeClass("agileits_header");
 			}
 		 });
 
 	});
-	</script>
+	</script> -->
 
 	<div class="logo_products">
 		<div class="container" style="width: 320px;
@@ -238,10 +249,13 @@ author: jayaprada A.B.C
 		</nav>
 	</div>
 		<div class="w3l_banner_nav_right">
-			<div class="w3ls_w3l_banner_nav_right_grid">
-				<h3>Frequntly Asked Questiones</h3>
-				<hr>
-				<h4>  1. What Products Are Available Online?</h4>
+			<!-- about -->
+					<div class="privacy about"> 
+						<h3><b>Frequently Asked Questiones</b></h3>
+					
+						
+						<!--<p class="animi"> --->
+							<h4>  1. What Products Are Available Online?</h4>
 				<p>   We offer a wide selection of wooden gates and metal gates in a wide variety of modern and traditional designs. Available in hundreds of size combinations and an endless range of made to measure sizes we are confident there are adequate options available to meet the needs of all residential properties at an affordable price. 
 
 					To complement these products we also have a variety of metal railings and fence panels that are available to order online that will provide an effective means of securing the perimeter of your property whilst retaining an aesthetically pleasing appearance.</p>
@@ -272,80 +286,112 @@ author: jayaprada A.B.C
 							<p>Many of our wood drive gates and metal driveway gates are suitable for automation however some modification may be required so they work in a safe and proper manner.
 
 								Please note that we do not sell automation kits as these are not really suitable for DIY installation.</p>
-				<div class="w3ls_w3l_banner_nav_right_grid1">
+			<div class="agile_about_grids">
+				<div class="col-md-6 agile_about_grid_right">
 				
+				
+				
+			
+							
+			<!-- //about -->
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<!-- //banner -->
+			<!-- team -->
+			<center>	<div class="team">
 					
+					
+						<div class="agileits_team_grids">
+							<div class="col-md-3 agileits_team_grid">
+			
+							</div>
+							<div class="col-md-3 agileits_team_grid">
+								
+							
+								<ul class="agileits_social_icons agileits_social_icons_team">
+									
+									
+								</ul>
+							</div>
+							<div class="col-md-3 agileits_team_grid">
+								
+								
+								<ul class="agileits_social_icons agileits_social_icons_team">
+									
+							</div>
+							
+							<div class="col-md-3 agileits_team_grid">
+			
+							</div>
+							
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+			<!-- footer -->
+			<div class="footer">
+				<div class="container" style="color: white;">
+						<div class="clearfix"> </div>
 					</div>
 				</div>
-				<div class="clearfix"> </div>
 			</div>
-		</div>
-	</div>
-	<div class="clearfix"></div>
-</div>
-<!-- //banner -->
-<!-- footer -->
-<div class="footer">
-	<div class="container" style="color: white;">
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-</div>
-<!-- //footer -->
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function(){
-$(".dropdown").hover(
-	function() {
-		$('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-		$(this).toggleClass('open');
-	},
-	function() {
-		$('.dropdown-menu', this).stop( true, true ).slideUp("slow");
-		$(this).toggleClass('open');
-	}
-);
-});
-</script>
-<!-- here stars scrolling icon -->
-<script type="text/javascript">
-	$(document).ready(function() {
-		/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear'
-			};
-		*/
-
-		$().UItoTop({ easingType: 'easeOutQuart' });
-
-		});
-</script>
-<!-- //here ends scrolling icon -->
-<script src="js/minicart.js"></script>
-<script>
-	paypal.minicart.render();
-
-	paypal.minicart.cart.on('checkout', function (evt) {
-		var items = this.items(),
-			len = items.length,
-			total = 0,
-			i;
-
-		// Count the number of each item in the cart
-		for (i = 0; i < len; i++) {
-			total += items[i].get('quantity');
-		}
-
-		if (total < 3) {
-			alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
-			evt.preventDefault();
-		}
-	});
-
-</script>
-</body>
-</html>
+			<!-- //footer -->
+			<!-- Bootstrap Core JavaScript -->
+			<script src="js/bootstrap.min.js"></script>
+			<script>
+			$(document).ready(function(){
+			$(".dropdown").hover(
+				function() {
+					$('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+					$(this).toggleClass('open');
+				},
+				function() {
+					$('.dropdown-menu', this).stop( true, true ).slideUp("slow");
+					$(this).toggleClass('open');
+				}
+			);
+			});
+			</script>
+			<!-- here stars scrolling icon -->
+			<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+						var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear'
+						};
+					*/
+			
+					$().UItoTop({ easingType: 'easeOutQuart' });
+			
+					});
+			</script>
+			<!-- //here ends scrolling icon -->
+			<script src="js/minicart.js"></script>
+			<script>
+				paypal.minicart.render();
+			
+				paypal.minicart.cart.on('checkout', function (evt) {
+					var items = this.items(),
+						len = items.length,
+						total = 0,
+						i;
+			
+					// Count the number of each item in the cart
+					for (i = 0; i < len; i++) {
+						total += items[i].get('quantity');
+					}
+			
+					if (total < 3) {
+						alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+						evt.preventDefault();
+					}
+				});
+			
+			</script>
+			</body>
+			</html>
+			

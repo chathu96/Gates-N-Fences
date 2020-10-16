@@ -4841,3 +4841,8 @@ input.checkbox:checked:after {
 	box-sizing: border-box;
 	
 }
+
+.error {
+	color: #ff0000;
+  
+  }
